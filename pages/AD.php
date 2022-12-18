@@ -6,20 +6,20 @@
   <title>h4Ck~T1p5</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="/indi//layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/h4CkT1Ps//layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body id="top">
   <!-- ################################################################################################ -->
-  <?php include('/indi/plantillas/header.php'); ?>
+  <?php include('/h4CkT1Ps/plantillas/header.php'); ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="/indi/index.php">Home</a></li>
-        <li><a href="/indi/plantillas/cursos.php">Cursos</a></li>
-        <li><a href="/indi/pages/AD.php">Active Directory</a></li>
+        <li><a href="/h4CkT1Ps/index.php">Home</a></li>
+        <li><a href="/h4CkT1Ps/plantillas/cursos.php">Cursos</a></li>
+        <li><a href="/h4CkT1Ps/pages/AD.php">Active Directory</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -36,20 +36,20 @@
         <h6> Cursos Disponibles</h6>
         <nav class="sdb_holder">      
           <ul>
-            <li><a class="drop" href="/indi/pages/basico.php">Nivel Básico</a>
+            <li><a class="drop" href="/h4CkT1Ps/pages/basico.php">Nivel Básico</a>
               <ul>
-              <li><a href="/indi/pages/basicHack.php">Introduccion al Hacking</a></li>
-                <li><a href="/indi/pages/noDisp.php">Personalización Linux</a></li>
+              <li><a href="/h4CkT1Ps/pages/basicHack.php">Introduccion al Hacking</a></li>
+                <li><a href="/h4CkT1Ps/pages/noDisp.php">Personalización Linux</a></li>
               </ul>
             </li>
-            <li><a href="/indi/pages/medio.php">Nivel Medio</a>
+            <li><a href="/h4CkT1Ps/pages/medio.php">Nivel Medio</a>
               <ul>
-                <li><a href="/indi/pages/webAttacks.php">Pentesting Web</a></li>
+                <li><a href="/h4CkT1Ps/pages/webAttacks.php">Pentesting Web</a></li>
               </ul>
             </li>
-            <li><a href="/indi/pages/avanzado.php">Nivel Avanzado</a></li>
+            <li><a href="/h4CkT1Ps/pages/avanzado.php">Nivel Avanzado</a></li>
               <ul>
-                <li><a href="/indi/pages/AD.php">Active Directory</a></li>
+                <li><a href="/h4CkT1Ps/pages/AD.php">Active Directory</a></li>
               </ul>
           </ul>
         </nav>

@@ -77,7 +77,7 @@
       <hr class="btmspace-50">
       <nav>
         <ul class="nospace inline pushright uppercase center">
-          <li><a href="/indi/index.php"><i class="fa fa-lg fa-home"></i></a></li>
+          <li><a href="/h4CkT1Ps/index.php"><i class="fa fa-lg fa-home"></i></a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Terms</a></li>

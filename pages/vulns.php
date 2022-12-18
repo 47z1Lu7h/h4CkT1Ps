@@ -18,8 +18,8 @@
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="/indi/index.php">Home</a></li>
-        <li><a href="/indi/pages/vulns.php">Vulnerabilites</a></li>
+        <li><a href="/h4CkT1Ps/index.php">Home</a></li>
+        <li><a href="/h4CkT1Ps/pages/vulns.php">Vulnerabilites</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>

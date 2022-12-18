@@ -17,9 +17,9 @@
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="/indi/index.php">Home</a></li>
-        <li><a href="/indi/plantillas/cursos.php">Cursos</a></li>
-        <li><a href="/indi/pages/medio.php">Media</a></li>
+        <li><a href="/h4CkT1Ps/index.php">Home</a></li>
+        <li><a href="/h4CkT1Ps/plantillas/cursos.php">Cursos</a></li>
+        <li><a href="/h4CkT1Ps/pages/medio.php">Media</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -37,20 +37,20 @@
         <h6> Cursos Disponibles</h6>
         <nav class="sdb_holder">      
           <ul>
-            <li><a class="drop" href="/indi/pages/basico.php">Nivel Básico</a>
+            <li><a class="drop" href="/h4CkT1Ps/pages/basico.php">Nivel Básico</a>
               <ul>
-              <li><a href="/indi/pages/basicHack.php">Introduccion al Hacking</a></li>
-                <li><a href="/indi/pages/noDisp.php">Personalización Linux</a></li>
+              <li><a href="/h4CkT1Ps/pages/basicHack.php">Introduccion al Hacking</a></li>
+                <li><a href="/h4CkT1Ps/pages/noDisp.php">Personalización Linux</a></li>
               </ul>
             </li>
-            <li><a href="/indi/pages/medio.php">Nivel Medio</a>
+            <li><a href="/h4CkT1Ps/pages/medio.php">Nivel Medio</a>
               <ul>
-                <li><a href="/indi/pages/webAttacks.php">Pentesting Web</a></li>
+                <li><a href="/h4CkT1Ps/pages/webAttacks.php">Pentesting Web</a></li>
               </ul>
             </li>
-            <li><a href="/indi/pages/avanzado.php">Nivel Avanzado</a></li>
+            <li><a href="/h4CkT1Ps/pages/avanzado.php">Nivel Avanzado</a></li>
               <ul>
-                <li><a href="/indi/pages/AD.php">Active Directory</a></li>
+                <li><a href="/h4CkT1Ps/pages/AD.php">Active Directory</a></li>
               </ul>
           </ul>
         </nav>
@@ -64,7 +64,7 @@
         <div>  <p><h2>Curso de hacking Web</h2></p>
           <img class="imgr borderedbox inspace-5" src="" alt="test">
           <p> </p>
-          <p>alalala<a href="/indi/pages/webAttacks.php"> Aquí</a>, muchas gracias :)</p>
+          <p>alalala<a href="/h4CkT1Ps/pages/webAttacks.php"> Aquí</a>, muchas gracias :)</p>
        </div> 
         <!-- ################################################################################################ -->
       </div>

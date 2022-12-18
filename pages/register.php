@@ -21,8 +21,8 @@
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-      <li><a href="/indi/index.php">Home</a></li>
-      <li><a href="/indi/pages/register.php">Register</a></li>
+      <li><a href="/h4CkT1Ps/index.php">Home</a></li>
+      <li><a href="/h4CkT1Ps/pages/register.php">Register</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -38,7 +38,7 @@
         <!-- ################################################################################################ -->
         <h1>Register</h1>
         <img class="imgr borderedbox inspace-1" src="../images/demo/imgr.jpg" alt="">
-        <p> Ya tienes una cuenta?, <a href="/indi/pages/login.php">Inicia Sesion!! </a>.</p>
+        <p> Ya tienes una cuenta?, <a href="/h4CkT1Ps/pages/login.php">Inicia Sesion!! </a>.</p>
         </div>
         <form action="#" method="post">
             <div class="one_third first">

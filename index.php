@@ -37,21 +37,21 @@
           <article><i class="btmspace-30 fa fa-3x fa-low-vision"></i>
             <h6 class="heading font-x1">Herramientas</h6>
             <p class="btmspace-30">Recopilación de las herramientas mas utilizdas por los hackers. [&hellip;]</p>
-            <footer><a class="btn" href="/indi/pages/tools.php">Read More &raquo;</a></footer>
+            <footer><a class="btn" href="/h4CkT1Ps/pages/tools.php">Read More &raquo;</a></footer>
           </article>
         </li>
         <li class="one_third">
           <article><i class="btmspace-30 fa fa-3x fa-paw"></i>
             <h6 class="heading font-x1">Vulnerabilidades</h6>
             <p class="btmspace-30">Aqui te mostramos algunas de las vulnerabilidades mas famosas. [&hellip;]</p>
-            <footer><a class="btn" href="/indi/pages/vulns.php">Read More &raquo;</a></footer>
+            <footer><a class="btn" href="/h4CkT1Ps/pages/vulns.php">Read More &raquo;</a></footer>
           </article>
         </li>
         <li class="one_third">
           <article><i class="btmspace-30 fa fa-3x fa-cube"></i>
             <h6 class="heading font-x1">Pentesting</h6>
             <p class="btmspace-30"> Lista de recursos, paginas web y fuentes de información. [&hellip;]</p>
-            <footer><a class="btn" href="/indi/pages/pentest.php">Read More &raquo;</a></footer>
+            <footer><a class="btn" href="/h4CkT1Ps/pages/pentest.php">Read More &raquo;</a></footer>
           </article>
         </li>
       </ul>

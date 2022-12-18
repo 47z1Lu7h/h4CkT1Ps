@@ -17,8 +17,8 @@
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="/indi/index.php">Home</a></li>
-        <li><a href="/indi/plantillas/usuarios.php">Ususario</a></li>
+        <li><a href="/h4CkT1Ps/index.php">Home</a></li>
+        <li><a href="/h4CkT1Ps/plantillas/usuarios.php">Ususario</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -34,7 +34,7 @@
         <h1>Users</h1>
         <img class="imgr borderedbox inspace-5" src="" alt="">
         <p>Aqui se mostará el perfil de usuario</p>
-        <p>Podrá adquirir cursos y añadir herramientas a la base de datos, previa confirmacion del<a href="/indi/plantillas/admin.php"> admin</a>.</p>
+        <p>Podrá adquirir cursos y añadir herramientas a la base de datos, previa confirmacion del<a href="/h4CkT1Ps/plantillas/admin.php"> admin</a>.</p>
         <img class="imgl borderedbox inspace-5" src="" alt="">
       </div>
       <!-- ################################################################################################ -->

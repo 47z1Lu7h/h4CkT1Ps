@@ -21,8 +21,8 @@
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-      <li><a href="/indi/index.php">Home</a></li>
-      <li><a href="/indi/pages/login.php">Login</a></li>
+      <li><a href="/h4CkT1Ps/index.php">Home</a></li>
+      <li><a href="/h4CkT1Ps/pages/login.php">Login</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -38,14 +38,14 @@
         <!-- ################################################################################################ -->
         <h1>Login</h1>
         <img class="imgl borderedbox inspace-1" src="../images/demo/imgl.jpg" alt="">
-        <p> Ya tienes una cuenta?, <a href="/indi/pages/register.php">Registrate!! </a>.</p>
+        <p> Ya tienes una cuenta?, <a href="/h4CkT1Ps/pages/register.php">Registrate!! </a>.</p>
         </div>
-        <form action="#" method="post">
+        <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="GET" enctype="multipart/form-data">
             <div class="one_third ">
               <label for="name">Ususario <span>*</span></label>
-              <input type="text" name="name" id="name" value="" size="22" required>
+              <input type="text" name="name" id="name" value="<?php echo $usuario; ?>" size="22" required>
               <label for="email">Password <span>*</span></label>
-              <input type="email" name="email" id="email" value="" size="22" required></br>
+              <input type="email" name="email" id="email" value="<?php echo $clave; ?>" size="22" required></br>
               <input type="submit" name="submit" value="Enviar"></br>
               <input type="reset" name="reset" value="Reset">
             </div>

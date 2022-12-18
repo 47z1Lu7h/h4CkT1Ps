@@ -17,8 +17,8 @@
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="/indi/index.php">Home</a></li>
-        <li><a href="/indi/plantillas/admin.php">Admin</a></li>
+        <li><a href="/h4CkT1Ps/index.php">Home</a></li>
+        <li><a href="/h4CkT1Ps/plantillas/admin.php">Admin</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -38,9 +38,9 @@
           <ul>
             <li><a class="drop" href="">Gestion Administrativa</a>
               <ul>
-              <li><a href="/indi/pages/gestion_herramientas.php">Gestionar herramientas</a></li>
-              <li><a href="/indi/pages/gestion_ususarios.php">Gestion de usuarios</a></li>
-              <li><a href="/indi/pages/gestion_cursos.php">Gestion de cursos</a></li>
+              <li><a href="/h4CkT1Ps/pages/gestion_herramientas.php">Gestionar herramientas</a></li>
+              <li><a href="/h4CkT1Ps/pages/gestion_ususarios.php">Gestion de usuarios</a></li>
+              <li><a href="/h4CkT1Ps/pages/gestion_cursos.php">Gestion de cursos</a></li>
               </ul>
             </li>
           </ul>

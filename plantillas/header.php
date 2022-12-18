@@ -24,9 +24,9 @@
       </div>
       <div class="fl_right">
         <ul>
-          <li><a href="/indi/index.php"><i class="fa fa-lg fa-home"></i></a></li>
-          <li><a href="/indi/pages/login.php">Login</a></li>
-          <li><a href="/indi/pages/register.php">Register</a></li>
+          <li><a href="/h4CkT1Ps/index.php"><i class="fa fa-lg fa-home"></i></a></li>
+          <li><a href="/h4CkT1Ps/pages/login.php">Login</a></li>
+          <li><a href="/h4CkT1Ps/pages/register.php">Register</a></li>
         </ul>
       </div>
       <!-- ################################################################################################ -->
@@ -38,7 +38,7 @@
   <div class="wrapper row1">
     <header id="header" class="hoc clear">
       <!-- ################################################################################################ -->
-      <h1><a href="/indi/index.php">H4Ck-T1p5</a></h1>
+      <h1><a href="/h4CkT1Ps/index.php">H4Ck-T1p5</a></h1>
       <p><h>~ Resources & learn ~ </h></p>
       <!-- ################################################################################################ -->
     </header>
@@ -50,36 +50,36 @@
     <nav id="mainav" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul class="clear">
-        <li class="active"><a href="/indi/index.php">Home</a></li>
+        <li class="active"><a href="/h4CkT1Ps/index.php">Home</a></li>
         <li><a class="drop" href="#">Páginas</a>
           <ul>
-            <li><a href="/indi/pages/pentest.php">pentest</a></li>
-            <li><a href="/indi/pages/tools.php">tools</a></li>
-            <li><a href="/indi/pages/vulns.php">vulns</a></li>
+            <li><a href="/h4CkT1Ps/pages/pentest.php">pentest</a></li>
+            <li><a href="/h4CkT1Ps/pages/tools.php">tools</a></li>
+            <li><a href="/h4CkT1Ps/pages/vulns.php">vulns</a></li>
           </ul>
         </li>
-        <li><a class="drop" href="/indi/plantillas/cursos.php">Cursos</a>
+        <li><a class="drop" href="/h4CkT1Ps/plantillas/cursos.php">Cursos</a>
           <ul>
-            <li><a class="drop" href="/indi/pages/basico.php">Principiante</a>
+            <li><a class="drop" href="/h4CkT1Ps/pages/basico.php">Principiante</a>
               <ul>
-                <li><a href="/indi/pages/basicHack.php">Introducción al Hacking</a></li>
-                <li><a href="/indi/pages/noDisp.php">Personalización Linux</a></li>
+                <li><a href="/h4CkT1Ps/pages/basicHack.php">Introducción al Hacking</a></li>
+                <li><a href="/h4CkT1Ps/pages/noDisp.php">Personalización Linux</a></li>
               </ul>
             </li>
-            <li><a class="drop" href="/indi/pages/medio.php">Medio</a>
+            <li><a class="drop" href="/h4CkT1Ps/pages/medio.php">Medio</a>
               <ul>
-                <li><a href="/indi/pages/webAttacks.php">Pentesting Web</a></li>
+                <li><a href="/h4CkT1Ps/pages/webAttacks.php">Pentesting Web</a></li>
               </ul>
             </li>
-            <li><a class="drop" href="/indi/pages/avanzado.php">Avanzado</a>
+            <li><a class="drop" href="/h4CkT1Ps/pages/avanzado.php">Avanzado</a>
               <ul>
-                <li><a href="/indi/pages/AD.php">Active Directory</a></li>
+                <li><a href="/h4CkT1Ps/pages/AD.php">Active Directory</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a href="/indi/plantillas/admin.php">Admin</a></li>
-        <li><a href="/indi/plantillas/usuarios.php">User</a></li>
+        <li><a href="/h4CkT1Ps/plantillas/admin.php">Admin</a></li>
+        <li><a href="/h4CkT1Ps/plantillas/usuarios.php">User</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </nav>
