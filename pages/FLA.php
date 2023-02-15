@@ -3,7 +3,7 @@
 <html>
 
 <head>
-<title>h4Ck~T1p5</title>
+  <title>File Upload Attacks</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -13,13 +13,12 @@
   <!-- ################################################################################################ -->
   <?php include('../plantillas/header.php'); ?>
   <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
         <li><a href="/h4CkT1Ps/index.php">Home</a></li>
-        <li><a href="/h4CkT1Ps/pages/vulns.php">Vulnerabilites</a></li>
+        <li><a href="/h4CkT1Ps/plantillas/cursos.php">Cursos</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -31,37 +30,20 @@
     <main class="hoc container clear">
       <!-- main body -->
       <!-- ################################################################################################ -->
-      <div class="content">
-        <!-- ################################################################################################ -->
-        <h1>Algunos casos de estudio para analizar</h1>
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
       <div class="content three_quarter">
         <!-- ################################################################################################ -->
-        <figure class="group">
-          <figcaption>
-            <p> 
-            <nav class="sdb_holder">
-              <ul>
-                <li><a class="content" href="../pages/nosql.php">Nosql Injection</a>
-                </li>
-                <li><a class="content" href="">File Upload Attacks</a>
-                </li>
-                <li><a class="content" href="">3..</a></li>
-              </ul>
-            </nav>
-          </figcaption></br>
-        </figure>
+        <h1>File Upload Attacks</h1>
+        <img class="imgr borderedbox inspace-5" src="../images/demo/imgr.gif" alt="agluwwagephawgeṕh">
+        <p> </p>
+        <!-- ################################################################################################ -->
       </div>
-      <!-- ################################################################################################ -->
-      <!-- ################################################################################################ -->
-      <!-- / main body -->
-      <div class="clear"></div>
-    </main>
+</main>
   </div>
   <!-- ################################################################################################ -->
   <?php include('../plantillas/footer.php'); ?>
   <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-
 </body>
 
 </html>

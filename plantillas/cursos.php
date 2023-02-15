@@ -10,6 +10,7 @@
 </head>
 
 <body id="top">
+<?php include('../plantillas/library.php'); ?>
   <!-- ################################################################################################ -->
   <?php include('../plantillas/header.php'); ?>
   <!-- ################################################################################################ -->
@@ -29,51 +30,37 @@
   <div class="wrapper row3">
     <main class="hoc container clear">
       <!-- main body -->
+      <div class="content">
       <!-- ################################################################################################ -->
       <div class="sidebar one_quarter first">
-        
         <!-- ################################################################################################ -->
         <h6> Cursos Disponibles</h6>
-        <nav class="sdb_holder">      
+        <nav class="posts">
           <ul>
-            <li><a class="drop" href="/h4CkT1Ps/pages/basico.php">Nivel Básico</a>
-              <ul>
-              <li><a href="/h4CkT1Ps/pages/basicHack.php">Introduccion al Hacking</a></li>
-                <li><a href="/h4CkT1Ps/pages/noDisp.php">Personalización Linux</a></li>
-              </ul>
+            <li><a class="btn" href="cursos.php?nivel=basico">Nivel Básico&raquo;</a></br>
             </li>
-            <li><a href="/h4CkT1Ps/pages/medio.php">Nivel Medio</a>
-              <ul>
-                <li><a href="/h4CkT1Ps/pages/webAttacks.php">Pentesting Web</a></li>
-              </ul>
+            <li><a class="btn" href="cursos.php?nivel=medio">Nivel Medio&raquo;</a></br>
             </li>
-            <li><a href="/h4CkT1Ps/pages/avanzado.php">Nivel Avanzado</a></li>
-              <ul>
-                <li><a href="/h4CkT1Ps/pages/AD.php">Active Directory</a></li>
-              </ul>
+            <li><a class="btn" href="cursos.php?nivel=avanzado">Nivel Avanzado&raquo;</a></li>
           </ul>
         </nav>
         <!-- ################################################################################################ -->
-      </div>
+        </div>
+        </div>      
       <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
       <div class="content three_quarter">
         <!-- ################################################################################################ -->
         <figure class="group">
           <figcaption>
-            <h6 class="heading">Introducción al hacking</h6>
-            <p>Curso de introducción al hacking, Animate a parender! </p>
+            <h6 class="heading">Descubre Nuestros Cursos </h6>
+            <p> </p>
             <footer><a class="btn" href="../pages/basicHack.php">Read More &raquo;</a></footer>
-          </figcaption></br></br>
-          <figcaption>
-            <h6 class="heading">Pentesting Web</h6>
-            <p>Conoce los metodos de intrusión web mas comunes.</p>
-            <footer><a class="btn" href="../pages/webAttacks.php">Read More &raquo;</a></footer>
-          </figcaption>
+          </figcaption></br>
         </figure>
       </div>
-      </div>
-</main>
+  </div>
+  </main>
   </div>
   <!-- ################################################################################################ -->
   <?php include('../plantillas/footer.php'); ?>

@@ -11,7 +11,7 @@
 
 <body id="top">
   <!-- ################################################################################################ -->
-  <?php include('/h4CkT1Ps/plantillas/header.php'); ?>
+  <?php include('../h4CkT1Ps/plantillas/header.php'); ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">

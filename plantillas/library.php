@@ -15,9 +15,9 @@
 <?php 
 //arrays
 $cursos = [
-  "basic" => ["Introduccion a linux","Personalizacion del Enotorno", "Basic PE"],
-  "medium" => ["Pentesting Web", "medium PE"],
-  "advanced" => ["Active Directory", "Buffer Overflow", "Advanced PE"]
+  "basico" => ["Introduccion a linux","Personalizacion del Enotorno", "Basic PE"],
+  "medio" => ["Pentesting Web", "medium PE"],
+  "advanzado" => ["Active Directory", "Buffer Overflow", "Advanced PE"]
 ];
 
 $users = array("admin", "pepe", "paco", "piko", "pepi");

@@ -12,6 +12,7 @@
 <body id="top">
   <!-- ################################################################################################ -->
   <?php include('../plantillas/header.php'); ?>
+  <?php include('../plantillas/library.php'); ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
@@ -33,8 +34,9 @@
         <!-- ################################################################################################ -->
         <h1>Users</h1>
         <img class="imgr borderedbox inspace-5" src="" alt="">
-        <p>Aqui se mostará el perfil de usuario</p>
-        <p>Podrá adquirir cursos y añadir herramientas a la base de datos, previa confirmacion del<a href="/h4CkT1Ps/plantillas/admin.php"> admin</a>.</p>
+        <?php
+        showArray($users);
+        ?>
         <img class="imgl borderedbox inspace-5" src="" alt="">
       </div>
       <!-- ################################################################################################ -->

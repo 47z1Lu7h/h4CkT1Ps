@@ -30,40 +30,13 @@
     <main class="hoc container clear">
       <!-- main body -->
       <!-- ################################################################################################ -->
-      <div class="sidebar one_quarter first">
-        
-        <!-- ################################################################################################ -->
-        <h6> Cursos Disponibles</h6>
-        <nav class="sdb_holder">      
-          <ul>
-            <li><a class="drop" href="/h4CkT1Ps/pages/basico.php">Nivel Básico</a>
-              <ul>
-              <li><a href="/h4CkT1Ps/pages/basicHack.php">Introduccion al Hacking</a></li>
-                <li><a href="/h4CkT1Ps/pages/noDisp.php">Personalización Linux</a></li>
-              </ul>
-            </li>
-            <li><a href="/h4CkT1Ps/pages/medio.php">Nivel Medio</a>
-              <ul>
-                <li><a href="/h4CkT1Ps/pages/webAttacks.php">Pentesting Web</a></li>
-              </ul>
-            </li>
-            <li><a href="/h4CkT1Ps/pages/avanzado.php">Nivel Avanzado</a></li>
-              <ul>
-                <li><a href="/h4CkT1Ps/pages/AD.php">Active Directory</a></li>
-              </ul>
-          </ul>
-        </nav>
-        <!-- ################################################################################################ -->
-      </div>
       <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
       <div class="content three_quarter">
         <!-- ################################################################################################ -->
-        <h1>Este curso<strong> no </strong> esta disponible por el momento </h1>
+        <h1>Nosql Injection</h1>
         <img class="imgr borderedbox inspace-5" src="../images/demo/imgr.gif" alt="agluwwagephawgeṕh">
         <p> </p>
-        <p>Disculpamos las molestias ocasionadas, por favor eche un vistazo a los cursos que tenemos disponibles<a href="/h4CkT1Ps/plantillas/cursos.php"> Aquí</a>, muchas gracias :)</p>
-          
         <!-- ################################################################################################ -->
       </div>
 </main>
