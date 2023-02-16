@@ -11,14 +11,14 @@
 
 <body id="top">
   <!-- ################################################################################################ -->
-  <?php include('../h4CkT1Ps/plantillas/header.php'); ?>
+  <?php include('../h4CkT1Ps/views/header.php'); ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
         <li><a href="/h4CkT1Ps/index.php">Home</a></li>
-        <li><a href="/h4CkT1Ps/plantillas/cursos.php">Cursos</a></li>
+        <li><a href="/h4CkT1Ps/views/cursos.php">Cursos</a></li>
         <li><a href="/h4CkT1Ps/pages/AD.php">Active Directory</a></li>
       </ul>
       <!-- ################################################################################################ -->
@@ -76,7 +76,7 @@
 
 
   <!-- ################################################################################################ -->
-  <?php include('../plantillas/footer.php'); ?>
+  <?php include('../views/includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
 

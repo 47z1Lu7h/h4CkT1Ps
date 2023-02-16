@@ -1,44 +1,25 @@
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */
-;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */
-;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */
-;
-/*!40101 SET NAMES utf8mb4 */
-;
 -- --------------------------------------------------------
 --
 -- Base de datos: 'hacktips'
 --
 
-CREATE DATABASES IF NOT EXISTS 'hacktips' () ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
+CREATE DATABASE IF NOT EXISTS hacktips;
 --
 --
 -- Estructura de tabla para la tabla 'users'
 --
-
-CREATE TABLE 'users' (
-  'id' INT NOT NUll AUTO_INCREMENT,
-  'loginName' varchar(64) NOT NULL,
-  'Clave' varchar(64) NOT NULL,
-  'Nombre' varchar(64) NOT NULL,
-  'Apellidos' varchar(64) NOT NULL,
-  'Dirección' varchar(64),
-  'Teléfono' INT NOT NULL,
-  'Formación' varchar(64)
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
+create table user(
+	id int not null auto_increment primary key,
+	fullname varchar(500) not null,
+	username varchar(100) not null unique,
+	email varchar(255) not null unique,
+	password varchar(255) not null,
+	created_at datetime not null
+);
 --
 -- Volcado de datos para la tabla 'users'
---
-INSERT INTO 'users' ('id','loginName', 'Clave', 'Nombre', 'Apellidos', 'Dirección', 'Teléfono') VALUES
-('admin', 'abc123.', 'master', NULL,),
-('pepe', 'abc123.'),
-('paco', 'abc123.'),
-('piko', 'abc123.'),
-('pepi', 'abc123.');
+
+
 -- Estructura de tabla para la tabla 'tools'
 CREATE TABLE 'tools' (
   'id' INT NOT NULL,

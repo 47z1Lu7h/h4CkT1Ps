@@ -11,14 +11,14 @@
 
 <body id="top">
   <!-- ################################################################################################ -->
-  <?php include('../plantillas/header.php'); ?>
+  <?php include('../views/includes/header.php'); ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
         <li><a href="/h4CkT1Ps/index.php">Home</a></li>
-        <li><a href="/h4CkT1Ps/plantillas/cursos.php">Cursos</a></li>
+        <li><a href="/h4CkT1Ps/views/cursos.php">Cursos</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -42,7 +42,7 @@
 </main>
   </div>
   <!-- ################################################################################################ -->
-  <?php include('../plantillas/footer.php'); ?>
+  <?php include('../views/includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
 
