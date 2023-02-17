@@ -25,11 +25,11 @@
       <div class="fl_right">
         <ul>
           <li><a href="/h4CkT1Ps/index.php"><i class="fa fa-lg fa-home"></i></a></li>
-          <?php if(!isset($_SESSION["user_id"])):?>
-          <li><a href="views/register.php">REGIST3R</a></li>
-          <li><a href="views/login.php">L@GIN</a></li>
+          <?php if(!isset($_SESSION["login_user"])):?>
+          <li><a href="../views/register.php">REGIST3R</a></li>
+          <li><a href="../views/login.php">L@GIN</a></li>
           <?php else:?>
-          <li><a href="php/logout.php">SALIR</a></li>
+          <li><a href="../php/logout.php">SALIR</a></li>
           <?php endif;?>
         </ul>
       </div>

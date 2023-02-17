@@ -12,19 +12,16 @@
 <body id="top">
   <!-- ################################################################################################ -->
   <?php 
-  include('../views/includes/header.php'); 
-
-  session_start();
-    if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
-	print "<script>alert(\"Acceso invalido!\");window.location='login.php';</script>";}
+  include('../views/includes/header.php');
+  include('../php/session.php'); 
   ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="/h4CkT1Ps/index.php">Home</a></li>
-        <li><a href="/h4CkT1Ps/views/admin.php">Admin</a></li>
+        <li><a href="/h4CkT1Ps/index.php">index</a></li>
+        <li><a href="/h4CkT1Ps/views/home.php">Home</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -39,7 +36,7 @@
       <div class="sidebar one_quarter first">
         
         <!-- ################################################################################################ -->
-        <h6> Wellcome back!</h6>
+        <h6> Hey</h6>
         <nav class="sdb_holder">      
           <ul>
             <li><a class="drop" href="">lsls </a>
@@ -53,14 +50,15 @@
         </nav>
         <!-- ################################################################################################ -->
       </div>
+      
       <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
       <div class="content three_quarter">
         <!-- ################################################################################################ -->
-        <h1><strong> Admin Panel </strong>  </h1>
+        <h1><strong> Welcome <?php echo $login_session; ?></strong>!!!</h1>
         <img class="imgr borderedbox inspace-5" src="" alt="test">
         <p> </p>
-        <p>Panel administtración admin, tendra acceso con privilegios a toda la pagina y toda la base de datos.</p>
+        <p>Panel user</p>
           
         <!-- ################################################################################################ -->
       </div>
