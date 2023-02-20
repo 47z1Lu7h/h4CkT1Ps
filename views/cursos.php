@@ -13,7 +13,7 @@
   <?php 
     session_start();
     include('../views/includes/header.php');
-    include('../views/functions.php'); 
+    include('../php/functions.php'); 
   ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
@@ -66,7 +66,9 @@
   </div>
   <!-- ################################################################################################ -->
   <?php include('../views/includes/footer.php'); ?>
+  <script src="../layout/scripts/jquery.min.js"></script>
+  <script src="../layout/scripts/jquery.backtotop.js"></script>
+  <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
   <!-- ################################################################################################ -->
 </body>
-
-</html>

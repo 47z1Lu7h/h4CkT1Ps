@@ -1,59 +1,64 @@
 -- --------------------------------------------------------
---
 -- Base de datos: 'hacktips'
 --
-
 CREATE DATABASE IF NOT EXISTS hacktips;
+use hacktips;
 --
 --
 -- Estructura de tabla para la tabla 'users'
 --
-create table user(
-	id int not null auto_increment primary key,
-	fullname varchar(500) not null,
-	username varchar(100) not null unique,
-	email varchar(255) not null unique,
-	password varchar(255) not null,
-	created_at datetime not null
+CREATE TABLE IF NOT EXISTS user(
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	fullname VARCHAR(255) NOT NULL,
+	username VARCHAR(255) NOT NULL unique,
+	email  VARCHAR(255) NOT NULL unique,
+	password VARCHAR(255) NOT NULL,
+	created_at datetime NOT NULL
 );
 --
--- Volcado de datos para la tabla 'users'
-
-
 -- Estructura de tabla para la tabla 'tools'
-CREATE TABLE 'tools' (
-  'id' INT NOT NULL,
-  'name' varchar(64) NOT NULL
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
+--
+CREATE TABLE tools(
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL
+);
 --
 -- Volcado de datos para la tabla 'tools'
 --
-INSERT INTO 'tools' ('id', 'name') VALUES
-('1', 'GitHub3rs'),
-('2', 'Pasword Crackers'),
-('3', 'Proxies'),
-('4', 'Expoloitation'),
-('5', 'Imformation Gathering'),
-('6', 'Port ScaningPort Scaning'),
-('7', 'Packet Analizers'),
-('8', 'Vulnerabiity Scanners'),
-('9', 'Addons');
+INSERT INTO tools (id, nombre) VALUES
+(1, 'GitHub3rs'),
+(2, 'Pasword Crackers'),
+(3, 'Proxies'),
+(4, 'Expoloitation'),
+(5, 'Imformation Gathering'),
+(6, 'Port ScaningPort Scaning'),
+(7, 'Packet Analizers'),
+(8, 'Vulnerabiity Scanners'),
+(9, 'Addons');
 --
--- Índices para tablas volcadas
---
--- Indices de la tabla 'tools'
---
-ALTER TABLE 'tools'
-ADD PRIMARY KEY ('id');
-COMMIT;
 -- Estructura de tabla para la tabla 'cursos'
-CREATE TABLE 'cursos' ('id' INT NOT NULL,) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
-CREATE TABLE 'basic' ('id' INT NOT NULL,) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
-CREATE TABLE 'medium' ('id' INT NOT NULL,) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
-CREATE TABLE 'advanced' ('id' INT NOT NULL,) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */
-;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */
-;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */
-;
+--
+CREATE TABLE IF NOT EXISTS productos(
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    descripcion VARCHAR(1024) NOT NULL,
+    precio DECIMAL(9,2)
+);
+CREATE TABLE IF NOT EXISTS carrito_usuarios(
+    id_sesion VARCHAR(255) NOT NULL,
+    id_producto BIGINT UNSIGNED NOT NULL,
+    FOREIGN KEY (id_producto) REFERENCES productos(id)
+    ON UPDATE CASCADE ON DELETE CASCADE
+);
+--
+-- Volcado de datos para la tabla 'products'
+--
+INSERT INTO productos (id, nombre, descripcion, precio) VALUES
+(1, "Introduccion a linux", "descrp", "10 €"),
+(2, "Personalizacion del Enotorno", "descrp", "10 €"),
+(3, "Basic PE", "descrp", "10 €"),
+(4, "Pentesting Web", "descrp", "10 €"),
+(5, "medium PE", "descrp", "10 €"),
+(6, "Active Directory", "descrp", "10 €"),
+(7, "Advanced PE", "descrp", "10 €");
+--

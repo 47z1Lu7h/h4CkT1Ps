@@ -1,7 +1,6 @@
 <?php
 
 //arrays
-
 $cursos = [
   "basic" => ["Introduccion a linux","Personalizacion del Enotorno", "Basic PE"],
   "medium" => ["Pentesting Web", "medium PE"],
