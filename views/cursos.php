@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -11,9 +10,11 @@
 
 <body id="top">
   <!-- ################################################################################################ -->
-  <?php include('../views/includes/header.php'); ?>
-  <?php include('../views/functions.php'); ?>
-  <?php include('../views/arrays.php'); ?>
+  <?php 
+    session_start();
+    include('../views/includes/header.php');
+    include('../views/functions.php'); 
+  ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">

@@ -11,6 +11,7 @@
 
 <body id="top">
   <!-- ################################################################################################ -->
+  <?php session_start();?>
   <?php include('../views/includes/header.php'); ?>
   <?php include('../views/functions.php'); ?>
   <?php include('../views/arrays.php'); ?>

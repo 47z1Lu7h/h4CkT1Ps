@@ -11,6 +11,7 @@
 
 <body id="top">
   <!-- ################################################################################################ -->
+  <?php session_start();?>
   <?php include('../views/includes/header.php'); ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">

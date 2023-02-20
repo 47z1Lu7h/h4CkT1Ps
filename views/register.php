@@ -6,52 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-  <?php
-
-  if(isset($_POST['submit'])){
-    // Obtener valores de los campos del formulario
-    $username = $_POST['username'];
-    $clave = $_POST['clave'];
-    $nombre = $_POST['nombre'];
-    $apellidos = $_POST['apellidos'];
-    $direccion = $_POST['direccion'];
-    $telefono = $_POST['telefono'];
-    $formacion = $_POST['formacion'];
-
-    // Validar los campos del formulario
-    if(empty($username) || empty($nombre) || empty($apellidos) || empty($clave) || empty($telefono) ){
-      echo "Los campos con * rojo del formulario son obligatorios, pro favor complete los datos que faltan";
-    } else {
-      // Conectarse a la base de datos
-      $conn = mysqli_connect("host", "root", "yepale123", "hacktips");
-
-      // Comprobar conexión
-      if(!$conn){
-        die("Error de conexión: " . mysqli_connect_error());
-      }
-
-      // Preparar consulta para insertar datos en la base de datos
-      $query = "INSERT INTO users (username, nombre, apellidos, clave, telefono, formacion) VALUES ('$username', '$nombre', '$apellidos', '$clave', '$telefono', '$formacion')";
-
-      // Ejecutar consulta
-      if(mysqli_query($conn, $query)){
-        echo "Registro exitoso";
-      } else {
-        echo "Error al registrarse: " . mysqli_error($conn);
-      }
-
-      // Cerrar conexión
-      mysqli_close($conn);
-      }
-    }
-  ?>
-
 </head>
 
 <body id="top">
-<?php include('../views/arrays.php'); ?>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <?php include('../views/includes/header.php'); ?>
   <!-- ################################################################################################ -->

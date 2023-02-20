@@ -8,8 +8,6 @@ $cursos = [
   "advanced" => ["Active Directory", "Buffer Overflow", "Advanced PE"]
 ];
 
-$users = array("admin");
-
 $tools = array("GitHub3rs", "Pasword Crackers", "Proxies", "Expoloitation", "Imformation Gathering", "Port Scaning", "Packet Analizers", "Vulnerabiity Scanners", "Addons" );
 
 
