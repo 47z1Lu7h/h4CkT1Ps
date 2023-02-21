@@ -18,8 +18,8 @@
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="/h4CkT1Ps/index.php">Home</a></li>
-        <li><a href="/h4CkT1Ps/views/cursos.php">Cursos</a></li>
+        <li><a href="/h4CkT1Ps/index.php"><strong> index  </strong></a></li>
+        <li><a href="/h4CkT1Ps/pages/cursos.php">Cursos</a></li>
         <li><a href="/h4CkT1Ps/pages/avanzado.php">Avanzado</a></li>
       </ul>
       <!-- ################################################################################################ -->
@@ -63,10 +63,10 @@
         <!-- ################################################################################################ -->
         <h1><strong> Nivel Avanzado </strong></h1>
         <div> <p><h2>Curso de Active Directory</h2></p>
-          <img class="imgr borderedbox inspace-5" src="" alt="test">
-          <p> </p>
-          <p>alalala<a href="/h4CkT1Ps/pages/AD.php"> Aquí</a>, muchas gracias :)</p>
-       </div>   
+              <img class="imgr borderedbox inspace-5" src="" alt="test">
+              <p> </p>
+              <p>alalala<a href="/h4CkT1Ps/pages/AD.php"> Aquí</a>, muchas gracias :)</p>
+        </div>   
         <!-- ################################################################################################ -->
       </div>
     </main>
@@ -75,5 +75,4 @@
   <?php include('../views/includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
-
 </html>

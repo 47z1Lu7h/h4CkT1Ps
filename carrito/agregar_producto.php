@@ -53,9 +53,6 @@
 </div>
 <!-- ################################################################################################ -->
 <?php include('../views/includes/footer.php'); ?>
-<script src="../layout/scripts/jquery.min.js"></script>
-<script src="../layout/scripts/jquery.backtotop.js"></script>
-<script src="../layout/scripts/jquery.mobilemenu.js"></script>
-</body>
 <!-- ################################################################################################ -->
 </body>
+</html>

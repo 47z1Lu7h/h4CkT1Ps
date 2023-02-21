@@ -11,8 +11,20 @@
 					$user_id=$r["id"];
 					break;
 				}
+
 				if($user_id==null){
 					print "<script>alert(\"Las credenciales proporcionadas son incorrectas!\");window.location='../views/login.php';</script>";
+				
+				}elseif($user_id==1){
+					$sql2= "select username from user where id=$user_id ";
+					$query2 = $con->query($sql2);
+					$row = mysqli_fetch_array($query2,MYSQLI_ASSOC);
+					$login_session = $row['username'];
+
+					session_start();
+					$_SESSION["username"]=$login_session;
+					print "<script>alert(\"Welcome Admin!!!\");window.location='../views/admin.php';</script>";	
+				
 				}else{
 					$sql2= "select username from user where id=$user_id ";
 					$query2 = $con->query($sql2);

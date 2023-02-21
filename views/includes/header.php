@@ -29,7 +29,7 @@
           <li><a href="/h4CkT1Ps/views/register.php">REGIST3R</a></li>
           <li><a href="/h4CkT1Ps/views/login.php">L@GIN</a></li>
           <?php else:?>
-          <li><a> Welcome <?php echo($_SESSION["username"])?> ! </a></li>
+          <li><a> Welcome <?php echo($_SESSION["username"])?>! </a></li>
           <li><a href="/h4CkT1Ps/php/logout.php">SALIR</a></li>
           <?php endif;?>
         </ul>
@@ -55,7 +55,7 @@
     <nav id="mainav" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul class="clear">
-        <li class="active"><a href="/h4CkT1Ps/index.php">h4Ck~t1P5</a></li>
+        <li class="active"><a href="/h4CkT1Ps/index.php"><strong>index</strong></a></li>
         <li><a class="drop" href="#">Páginas</a>
           <ul>
             <li><a href="/h4CkT1Ps/pages/pentest.php">pentest</a></li>
@@ -63,7 +63,7 @@
             <li><a href="/h4CkT1Ps/pages/vulns.php">vulns</a></li>
           </ul>
         </li>
-        <li><a class="drop" href="/h4CkT1Ps/views/cursos.php">Cursos</a>
+        <li><a class="drop" href="/h4CkT1Ps/pages/cursos.php">Cursos</a>
           <ul>
             <li><a class="drop" href="/h4CkT1Ps/pages/basico.php">Principiante</a>
               <ul>

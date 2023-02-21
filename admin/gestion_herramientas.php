@@ -11,12 +11,14 @@
 
 <body id="top">
   <!-- ################################################################################################ -->
-  <?php
+  <?php 
     session_start();
-    if(!isset($_SESSION["username"]) || $_SESSION["username"]==null){
-        print "<script>alert(\"You need to Log in mate!\");window.location='login.php';</script>";
+    if (($_SESSION['username'])=="admin") {
+
+    }else{
+      print "<script>alert(\"You need to be ADMIN to access this page!!\");window.location='../views/login.php';</script>";
     }
-    include('includes/header.php');
+    include('../views/includes/header.php'); 
   ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
@@ -24,48 +26,45 @@
       <!-- ################################################################################################ -->
       <ul>
         <li><a href="/h4CkT1Ps/index.php"><strong> index  </strong></a></li>
-        <li><a href="/h4CkT1Ps/views/home.php">Home</a></li>
+        <li><a href="/h4CkT1Ps/views/admin.php">Admin</a></li>
+        <li><a href="/h4CkT1Ps/admin/gestion_herramientas.php">Gestion herramientas</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
   </div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
   <div class="wrapper row3">
     <main class="hoc container clear">
       <!-- main body -->
       <!-- ################################################################################################ -->
-      <div class="sidebar one_quarter first">
-        
+      <div class="sidebar one_quarter first">        
         <!-- ################################################################################################ -->
-        <h6><em>hELLO <?php echo $_SESSION["username"]?> </em></h6>
+        <h6><em>Herramientas administrativas</em></h6>
         <nav class="sdb_holder">      
           <ul>
-            <li><a class="" href=""><strong>  Explora Nuestra w3b! </strong></a><br>
-              <ul>
-              <li><a href="/h4CkT1Ps/pages/cursos.php">Cursos</a></li>
-              <li><a href="/h4CkT1Ps/pages/tools.php">T@@l5</a></li>
-              <li><a href="/h4CkT1Ps/pages/vulns.php">VuLN5</a></li>
-              <li><a href="/h4CkT1Ps/pages/pentest.php">P3nt3st1ng</a></li>
-              <li><a href="/h4CkT1Ps/pages/users.php">Us3rs</a></li>
-              </ul>
-            </li>
+            <li><a class="drop" href=""> <em>Gestion Administrativa</em> </a><br>
+            <ul>
+              <li><a href="/h4CkT1Ps/admin/gestion_ususarios.php">Gestion de usuarios</a></li>
+              <li><a href="/h4CkT1Ps/admin/gestion_cursos.php">Gestion de cursos</a></li>
+              <li><a href="/h4CkT1Ps/admin/gestion_herramientas.php">Gestionar herramientas</a></li>
+            </ul>
           </ul>
         </nav>
         <!-- ################################################################################################ -->
-      </div>
+      </div>      
       <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
       <div class="content three_quarter">
         <!-- ################################################################################################ -->
-        <h1><strong> Welcome back <?php echo $_SESSION["username"]?>!!</strong></h1>
-        <img class="imgr borderedbox inspace-5" src="" alt="test">
-        <p><strong> ¡Hey!! </strong></p>
-        <p>This is your User Panel..</p>
+        <h1><strong> Gestion herramientas </strong> </h1>
+        <img class="imgr borderedbox inspace-5" src="../images/demo/imgr.gif" alt="test">
+        <p> </p>
+        <p> gestiona<a href=""> Aquí</a> gracias :)</p>
+          
         <!-- ################################################################################################ -->
       </div>
-</main>
+    </main>
   </div>
   <!-- ################################################################################################ -->
   <?php include('../views/includes/footer.php'); ?>

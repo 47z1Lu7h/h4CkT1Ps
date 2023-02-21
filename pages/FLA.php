@@ -18,8 +18,8 @@
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="/h4CkT1Ps/index.php">Home</a></li>
-        <li><a href="/h4CkT1Ps/views/cursos.php">Cursos</a></li>
+        <li><a href="/h4CkT1Ps/index.php"><strong> index  </strong></a></li>
+        <li><a href="/h4CkT1Ps/pages/cursos.php">Cursos</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -46,5 +46,4 @@
   <?php include('../views/includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
-
 </html>

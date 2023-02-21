@@ -11,14 +11,21 @@
 
 <body id="top">
   <!-- ################################################################################################ -->
-  <?php session_start();?>
-  <?php include('../views/includes/header.php'); ?>
+  <?php 
+    session_start();
+    if (($_SESSION['username'])=="admin") {
+    }else{
+      print "<script>alert(\"You need to be ADMIN to access this page!!\");window.location='login.php';</script>";
+    }
+    
+    include('../views/includes/header.php'); 
+  ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="/h4CkT1Ps/index.php">Home</a></li>
+        <li><a href="/h4CkT1Ps/index.php"><strong> index  </strong></a></li>
         <li><a href="/h4CkT1Ps/views/admin.php">Admin</a></li>
       </ul>
       <!-- ################################################################################################ -->
@@ -32,18 +39,16 @@
       <!-- main body -->
       <!-- ################################################################################################ -->
       <div class="sidebar one_quarter first">
-        
         <!-- ################################################################################################ -->
-        <h6> Herramientas administrativas</h6>
+        <h6><em>Herramientas administrativas</em></h6>
         <nav class="sdb_holder">      
           <ul>
-            <li><a class="drop" href="">Gestion Administrativa</a>
-              <ul>
-              <li><a href="/h4CkT1Ps/pages/gestion_herramientas.php">Gestionar herramientas</a></li>
-              <li><a href="/h4CkT1Ps/pages/gestion_ususarios.php">Gestion de usuarios</a></li>
-              <li><a href="/h4CkT1Ps/pages/gestion_cursos.php">Gestion de cursos</a></li>
-              </ul>
-            </li>
+            <li><a class="drop" href=""> <em>Gestion Administrativa</em> </a><br>
+            <ul>
+              <li><a href="/h4CkT1Ps/admin/gestion_ususarios.php">Gestion de usuarios</a></li>
+              <li><a href="/h4CkT1Ps/admin/gestion_cursos.php">Gestion de cursos</a></li>
+              <li><a href="/h4CkT1Ps/admin/gestion_herramientas.php">Gestionar herramientas</a></li>
+            </ul>
           </ul>
         </nav>
         <!-- ################################################################################################ -->
@@ -56,7 +61,6 @@
         <img class="imgr borderedbox inspace-5" src="" alt="test">
         <p> </p>
         <p>Panel administtración admin, tendra acceso con privilegios a toda la pagina y toda la base de datos.</p>
-          
         <!-- ################################################################################################ -->
       </div>
 </main>

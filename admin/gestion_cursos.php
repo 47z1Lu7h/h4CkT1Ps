@@ -11,51 +11,64 @@
 
 <body id="top">
   <!-- ################################################################################################ -->
-  <?php session_start();?>
-  <?php include('../views/includes/header.php'); ?>
-  <?php include('../views/functions.php'); ?>
-  <?php include('../views/arrays.php'); ?>
+  <?php 
+    session_start();
+    if (($_SESSION['username'])=="admin") {
+    }else{
+      print "<script>alert(\"You need to be ADMIN to access this page!!\");window.location='login.php';</script>";
+    }
+    
+    include('../views/includes/header.php'); 
+  ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="/h4CkT1Ps/index.php">Home</a></li>
-        <li><a href="/h4CkT1Ps/views/usuarios.php">Ususario</a></li>
+        <li><a href="/h4CkT1Ps/index.php"><strong> index  </strong></a></li>
+        <li><a href="/h4CkT1Ps/views/admin.php">Admin</a></li>
+        <li><a href="/h4CkT1Ps/pages/gestion_cursos.php">Gestion cursos</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
   </div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
   <div class="wrapper row3">
     <main class="hoc container clear">
       <!-- main body -->
       <!-- ################################################################################################ -->
-      <div class="content">
+      <div class="sidebar one_quarter first">        
         <!-- ################################################################################################ -->
-        <h1>Users</h1>
-        <img class="imgr borderedbox inspace-5" src="" alt="">
-        <div class="content three_quarter">
+        <h6><em>Herramientas administrativas</em></h6>
+        <nav class="sdb_holder">      
+          <ul>
+            <li><a class="drop" href=""> <em>Gestion Administrativa</em> </a><br>
+            <ul>
+              <li><a href="/h4CkT1Ps/admin/gestion_ususarios.php">Gestion de usuarios</a></li>
+              <li><a href="/h4CkT1Ps/admin/gestion_cursos.php">Gestion de cursos</a></li>
+              <li><a href="/h4CkT1Ps/admin/gestion_herramientas.php">Gestionar herramientas</a></li>
+            </ul>
+          </ul>
+        </nav>
         <!-- ################################################################################################ -->
-        <figure class="group">
-          <figcaption>
-            <p><?php mostrarArray($users)?> </p><br>
-            <footer><p> y@p1  -->>  <a class="btn" href="../pages/noDisp.php"> y3p4&raquo;</a></p></footer>
-          </figcaption></br>
-        </figure>
-      </div>
-        <img class="imgl borderedbox inspace-5" src="" alt="">
-      </div>
+      </div>      
       <!-- ################################################################################################ -->
-      <!-- / main body -->
-      <div class="clear"></div>
+      <!-- ################################################################################################ -->
+      <div class="content three_quarter">
+        <!-- ################################################################################################ -->
+        <h1><strong> Gestion cursos </strong> </h1>
+        <img class="imgr borderedbox inspace-5" src="../images/demo/imgr.gif" alt="agluwwagephawgeṕh">
+        <p> </p>
+        <p> gestiona<a href=""> Aquí</a> gracias :)</p>
+          
+        <!-- ################################################################################################ -->
+      </div>
     </main>
   </div>
-
   <!-- ################################################################################################ -->
   <?php include('../views/includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
-
 </html>

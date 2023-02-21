@@ -16,6 +16,11 @@ CREATE TABLE IF NOT EXISTS user(
 	created_at datetime NOT NULL
 );
 --
+-- Insert Admin into user
+--
+INSERT INTO tools (id, fullname, username, email, password, created_at) VALUES
+(1, 'manolo anda borracho', 'admin', 'admin@admin.com', 'admin', 'NOW');
+--
 -- Estructura de tabla para la tabla 'tools'
 --
 CREATE TABLE tools(
@@ -38,7 +43,7 @@ INSERT INTO tools (id, nombre) VALUES
 --
 -- Estructura de tabla para la tabla 'cursos'
 --
-CREATE TABLE IF NOT EXISTS productos(
+CREATE TABLE IF NOT EXISTS cursos(
     id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
     descripcion VARCHAR(1024) NOT NULL,
@@ -47,13 +52,13 @@ CREATE TABLE IF NOT EXISTS productos(
 CREATE TABLE IF NOT EXISTS carrito_usuarios(
     id_sesion VARCHAR(255) NOT NULL,
     id_producto BIGINT UNSIGNED NOT NULL,
-    FOREIGN KEY (id_producto) REFERENCES productos(id)
+    FOREIGN KEY (id_producto) REFERENCES cursos(id)
     ON UPDATE CASCADE ON DELETE CASCADE
 );
 --
 -- Volcado de datos para la tabla 'products'
 --
-INSERT INTO productos (id, nombre, descripcion, precio) VALUES
+INSERT INTO cursos (id, nombre, descripcion, precio) VALUES
 (1, "Introduccion a linux", "descrp", "10 €"),
 (2, "Personalizacion del Enotorno", "descrp", "10 €"),
 (3, "Basic PE", "descrp", "10 €"),

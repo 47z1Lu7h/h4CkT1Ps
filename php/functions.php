@@ -2,7 +2,6 @@
 include('config.php'); 
 include('arrays.php'); 
 
-
 //functions
 function clean($var){
   htmlspecialchars(trim(strip_tags($var))); 
