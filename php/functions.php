@@ -91,7 +91,7 @@ function obtenerProductosEnCarrito()
 {
     include('config.php'); 
     iniciarSesionSiNoEstaIniciada();
-    $sentencia = $con->prepare("SELECT productos.id, productos.nombre, productos.descripcion, productos.precio
+    $sentencia = $conn->prepare("SELECT productos.id, productos.nombre, productos.descripcion, productos.precio
     FROM productos
     INNER JOIN carrito_usuarios
     ON productos.id = carrito_usuarios.id_producto
@@ -105,7 +105,7 @@ function quitarProductoDelCarrito($idProducto)
     include('config.php'); 
     iniciarSesionSiNoEstaIniciada();
     $idSesion = session_id();
-    $sentencia = $con->prepare("DELETE FROM carrito_usuarios WHERE id_sesion = ? AND id_producto = ?");
+    $sentencia = $conn->prepare("DELETE FROM carrito_usuarios WHERE id_sesion = ? AND id_producto = ?");
     return $sentencia->execute([$idSesion, $idProducto]);
 }
 
@@ -113,7 +113,7 @@ function obtenerProductos()
 {
   include('config.php'); 
   include('arrays.php');
-    $sentencia = $con->query("SELECT id, nombre, descripcion, precio FROM productos");
+    $sentencia = $conn->query("SELECT id, nombre, descripcion, precio FROM productos");
     return $sentencia->fetch_all();
 
 }
@@ -131,7 +131,7 @@ function obtenerIdsDeProductosEnCarrito()
 {
   include('config.php'); 
     iniciarSesionSiNoEstaIniciada();
-    $sentencia = $con->prepare("SELECT id_producto FROM carrito_usuarios WHERE id_sesion = ?");
+    $sentencia = $conn->prepare("SELECT id_producto FROM carrito_usuarios WHERE id_sesion = ?");
     $idSesion = session_id();
     $sentencia->execute([$idSesion]);
     return $sentencia->fetch_All(PDO::FETCH_COLUMN);
@@ -143,7 +143,7 @@ function agregarProductoAlCarrito($idProducto)
     // Ligar el id del producto con el usuario a través de la sesión
     iniciarSesionSiNoEstaIniciada();
     $idSesion = session_id();
-    $sentencia = $con->prepare("INSERT INTO carrito_usuarios(id_sesion, id_producto) VALUES (?, ?)");
+    $sentencia = $conn->prepare("INSERT INTO carrito_usuarios(id_sesion, id_producto) VALUES (?, ?)");
     return $sentencia->execute([$idSesion, $idProducto]);
 }
 
@@ -158,14 +158,14 @@ function iniciarSesionSiNoEstaIniciada()
 function eliminarProducto($id)
 {
   include('config.php'); 
-    $sentencia = $con->prepare("DELETE FROM productos WHERE id = ?");
+    $sentencia = $conn->prepare("DELETE FROM productos WHERE id = ?");
     return $sentencia->execute([$id]);
 }
 
 function guardarProducto($nombre, $precio, $descripcion)
 {
   include('config.php'); 
-    $sentencia = $con->prepare("INSERT INTO productos(nombre, precio, descripcion) VALUES(?, ?, ?)");
+    $sentencia = $conn->prepare("INSERT INTO productos(nombre, precio, descripcion) VALUES(?, ?, ?)");
     return $sentencia->execute([$nombre, $precio, $descripcion]);
 }
 

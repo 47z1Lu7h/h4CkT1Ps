@@ -6,7 +6,9 @@
   <title>h4Ck~T1p5</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/h4CkT1Ps/assets/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 </head>
 
 <body id="top">
@@ -19,7 +21,7 @@
     include('includes/header.php');
   ?>
   <!-- ################################################################################################ -->
-  <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
+  <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
@@ -62,9 +64,11 @@
         <h1><strong> Welcome back <?php echo $_SESSION["username"]?>!!</strong></h1>
         <img class="imgr borderedbox inspace-5" src="" alt="test">
         <p><strong> ¡Hey!! </strong></p>
-        <p>This is your User Panel..</p>
+        <p> This is your User Panel..<br><br><em>
+            ~  Your USER_ID is: <?php echo $_SESSION["user_id"]; ?><br>
+            ~ And Your Login Name: <?php echo $_SESSION["username"]; ?></p>
         <!-- ################################################################################################ -->
-      </div>
+      </div></em>
 </main>
   </div>
   <!-- ################################################################################################ -->

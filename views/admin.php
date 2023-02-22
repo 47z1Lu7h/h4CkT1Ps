@@ -6,7 +6,7 @@
   <title>h4Ck~T1p5</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/h4CkT1Ps/assets/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body id="top">
@@ -21,7 +21,7 @@
     include('../views/includes/header.php'); 
   ?>
   <!-- ################################################################################################ -->
-  <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
+  <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
@@ -45,7 +45,7 @@
           <ul>
             <li><a class="drop" href=""> <em>Gestion Administrativa</em> </a><br>
             <ul>
-              <li><a href="/h4CkT1Ps/admin/gestion_ususarios.php">Gestion de usuarios</a></li>
+              <li><a href="/h4CkT1Ps/admin/gestion_usuarios.php">Gestion de usuarios</a></li>
               <li><a href="/h4CkT1Ps/admin/gestion_cursos.php">Gestion de cursos</a></li>
               <li><a href="/h4CkT1Ps/admin/gestion_herramientas.php">Gestionar herramientas</a></li>
             </ul>
@@ -58,9 +58,10 @@
       <div class="content three_quarter">
         <!-- ################################################################################################ -->
         <h1><strong> Admin Panel </strong>  </h1>
-        <img class="imgr borderedbox inspace-5" src="" alt="test">
+        <p>Panel administración admin</p><br>
+        <div><img src="/h4CkT1Ps/assets/images/demo/gallery/adm1n.png" alt=""></div>
         <p> </p>
-        <p>Panel administtración admin, tendra acceso con privilegios a toda la pagina y toda la base de datos.</p>
+
         <!-- ################################################################################################ -->
       </div>
 </main>

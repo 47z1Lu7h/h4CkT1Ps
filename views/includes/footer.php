@@ -6,9 +6,10 @@
 <title>h4CkT1ps.com</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="../../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/h4CkT1Ps/assets/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
   <!-- ################################################################################################ -->
+  <em>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <div class="wrapper row4">
@@ -25,7 +26,7 @@
           <li><a class="faicon-vk" href="#"><i class="fa fa-github"></i></a></li>
           <li><a class="faicon-hack" href="#"><i class="fa fa-music"></i></a></li>          
         </ul>
-        <p class="nospace btmspace-50">...</p>
+        <p class="nospace btmspace-50">This is de footer of the page!</p></em>
         <hr>
       </div>
       <div class="group btmspace-50">
@@ -106,12 +107,12 @@
   <!-- ################################################################################################ -->
   <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
   <!-- JAVASCRIPTS -->
-  <script src="../../layout/scripts/jquery.min.js"></script>
-  <script src="../../layout/scripts/valida_login.js"></script>
-  <script src="../../layout/scripts/valida_registro.js"></script>
-  <script src="../../layout/scripts/jquery.open_form.js"></script>
-  <script src="../../layout/scripts/jquery.backtotop.js"></script>
-  <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
-  <script src="../../layout/scripts/jquery.flexslider-min.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/jquery.min.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/valida_login.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/valida_registro.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/jquery.open_form.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/jquery.backtotop.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/jquery.mobilemenu.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/jquery.flexslider-min.js"></script>
 
 </html>

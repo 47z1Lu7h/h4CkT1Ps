@@ -6,11 +6,12 @@
 <title>~ h4Ck-t1P5 ~</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="../../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/h4CkT1Ps/assets/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body id="top">
   <!-- ################################################################################################ -->
+  <em>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <div class="wrapper row0">
@@ -18,7 +19,7 @@
       <!-- ################################################################################################ -->
       <div class="fl_left">
         <ul>
-          <li><i class="fa fa-star"></i> grupo 9 </li>
+          <li><i class="fa fa-user-secret"  ></i> grupo 9 </li>
           <li><i class="fa fa-envelope-o"></i> info@h4Cktips.com</li>
         </ul>
       </div>
@@ -30,10 +31,11 @@
           <li><a href="/h4CkT1Ps/views/login.php">L@GIN</a></li>
           <?php else:?>
           <li><a> Welcome <?php echo($_SESSION["username"])?>! </a></li>
+          <li><a href="/h4CkT1Ps/cart/view_cart.php"><i class="fa fa-lg fa-shopping-bag"></i></a></li>
           <li><a href="/h4CkT1Ps/php/logout.php">SALIR</a></li>
           <?php endif;?>
         </ul>
-      </div>
+      </div></em>
       <!-- ################################################################################################ -->
     </div>
   </div>
@@ -85,6 +87,7 @@
         </li>
         <li><a href="/h4CkT1Ps/views/admin.php">Admin</a></li>
         <li><a href="/h4CkT1Ps/views/home.php">Home</a></li>
+        <li><a class="fa fa-shopping-cart " href="/h4CkT1Ps/cart"> ~ <strong>Merchandising </strong> </a></li>
       </ul>
       <!-- ################################################################################################ -->
     </nav>
@@ -94,11 +97,11 @@
   <!-- ################################################################################################ -->
   <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
   <!-- JAVASCRIPTS -->
-  <script src="../../layout/scripts/jquery.min.js"></script>
-  <script src="../../layout/scripts/jquery.open_form.js"></script>
-  <script src="../../layout/scripts/jquery.backtotop.js"></script>
-  <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
-  <script src="../../layout/scripts/jquery.flexslider-min.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/jquery.min.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/jquery.open_form.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/jquery.backtotop.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/jquery.mobilemenu.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/jquery.flexslider-min.js"></script>
 </body>
 
 </html>

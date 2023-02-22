@@ -14,7 +14,7 @@
   <?php session_start();?>
   <?php include('../views/includes/header.php'); ?>
   <!-- ################################################################################################ -->
-  <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
+  <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
@@ -62,7 +62,7 @@
     <div class="content three_quarter">
       <div class="posts">
         <figure class="group">
-          <div><img src="images/demo/500x280.png" alt=""></div>
+          <div><img src="assets/images/demo/500x280.png" alt=""></div>
           <figcaption>
             <h6 class="heading">Introducción al hacking</h6>
             <p>Curso de introducción al hacking, Animate a parender! </p>

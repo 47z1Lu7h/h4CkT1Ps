@@ -5,7 +5,7 @@
   <title>Register</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/h4CkT1Ps/assets/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body id="top">
@@ -14,7 +14,7 @@
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
+  <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
@@ -33,8 +33,8 @@
       <!-- ################################################################################################ -->
       <div class="content">
         <!-- ################################################################################################ -->
-        <h1>Register</h1>
-        <img class="imgr borderedbox inspace-1" src="../images/demo/imgr.jpg" alt="">
+        <h1>Registro</h1>
+        <img class="imgr borderedbox inspace-1" src="../assets/images/demo/imgr.jpg" alt="">
       </div>
       <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
@@ -61,16 +61,16 @@
           </div></br>
       <!-- ################################################################################################ -->
         <button type="submit" class="btn btn-default">Registrar</button>
-    </form>
+        </form><br><br>
     <!-- ################################################################################################ -->
     <!-- / main body -->
-    <h3><p> Ya tienes una cuenta?? -->> <a href="/h4CkT1Ps/views/login.php">Inicia Sesion!! </a></p></h3>
+    <p> <strong><em> Ya tienes una cuenta?? </em> </strong> <h3><a class="btn btn" href="/h4CkT1Ps/views/login.php">Inicia Sesion!! </a></p></h3>
     <div class="clear"></div>
     </main>
   </div>
   <!-- ################################################################################################ -->
   <!-- JAVASCRIPTS -->
-  <script src="../layout/scripts/valida_registro.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/valida_registro.js"></script>
   <!-- ################################################################################################ -->
   <?php include('../views/includes/footer.php'); ?>
   <!-- ################################################################################################ -->

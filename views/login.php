@@ -5,7 +5,7 @@
   <title>Lolgin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/h4CkT1Ps/assets/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
     
 </head>
 
@@ -17,7 +17,7 @@
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
+  <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
@@ -37,7 +37,7 @@
       <div class="content">
       <!-- ################################################################################################ -->
         <h1>Login</h1>
-        <img class="imgl borderedbox inspace-1" src="../images/demo/imgl.jpg" alt="">
+        <img class="imgl borderedbox inspace-1" src="../assets/images/demo/imgl.jpg" alt="">
       </div>
       <form role="form" name="login" action="../php/login.php" method="post">
             <div class="form-group">
@@ -50,9 +50,9 @@
             </div><br>
             <!-- ################################################################################################ -->
             <button type="submit" class="btn btn-default">Acceder</button>
-      </form>
+      </form><br><br>
     <!-- ################################################################################################ -->
-    <h3><p> Ya tienes una cuenta? -->> <a href="/h4CkT1Ps/views/register.php">Registrate!! </a></p></h3>  
+    <p><em> <strong> Todavía no tienes una cuenta?</strong></em>  <h3><a href="/h4CkT1Ps/views/register.php" class="btn btn-default">Registrate!! </a></p>
     </div>
       <!-- ################################################################################################ -->
       <!-- / main body -->
@@ -64,7 +64,7 @@
   </div>
   <!-- ################################################################################################ -->
   <!-- JAVASCRIPTS -->
-  <script src="../layout/scripts/valida_login.js"></script>
+  <script src="/h4CkT1Ps/assets/layout/scripts/valida_login.js"></script>
   <!-- ################################################################################################ -->
   <?php include('../views/includes/footer.php'); ?>
   <!-- ################################################################################################ -->

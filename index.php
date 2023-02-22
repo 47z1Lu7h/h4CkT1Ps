@@ -5,16 +5,18 @@
   <title>~h4Ck~t1P5~</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="assets/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body id="top">
   <!-- ################################################################################################ -->
-  <?php session_start();?>
-  <?php include('views/includes/header.php'); ?>
+  <?php 
+      session_start();
+      include('views/includes/header.php');
+  ?>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
+  <div class="bgded overlay" style="background-image:url('assets/images/demo/backgrounds/01.png');">
     <div id="pageintro" class="hoc clear">
       <!-- ################################################################################################ -->
     </div>
@@ -70,7 +72,7 @@
       </div>
       <div class="posts">
         <figure class="group">
-          <div><img src="images/demo/500x280.jpg" alt=""></div>
+          <div><img src="assets/images/demo/500x280.jpg" alt=""></div>
           <figcaption>
             <h6 class="heading">Introducción al hacking</h6>
             <p>Curso de introducción al hacking, Animate a parender! </p>
@@ -79,7 +81,7 @@
         </figure>
         <!-- ################################################################################################ -->
         <figure class="group">
-          <div><img src="images/demo/pentesWeb.jpg" alt=""></div>
+          <div><img src="assets/images/demo/pentesWeb.jpg" alt=""></div>
           <figcaption>
             <h6 class="heading">Pentesting Web</h6>
             <p>Conoce los metodos de intrusión web mas comunes.</p>
@@ -90,6 +92,10 @@
       <!-- ################################################################################################ -->
     </div>
   </div>  
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+<!-- Coments section.. on development   ######### -->
 <!-- ################################################################################################ -->
 <?php include('views/includes/footer.php'); ?>
 <!-- ################################################################################################ -->
