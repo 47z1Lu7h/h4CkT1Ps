@@ -97,7 +97,7 @@
     <div id="copyright" class="hoc clear">
       <!-- ################################################################################################ -->
       <p class="fl_left">Copyright &copy; 2050 - All Rights Reserved - <a href="#"></a>info@h4cktips.com</p>
-      <p class="fl_right"> by <a target="_blank" href="http://www.os-templates.com/"
+      <p class="fl_right"> by <a target="_blank" href=""
           title="Free Website Templates">h4Ck~t1p5</a></p>
       <!-- ################################################################################################ -->
     </div>

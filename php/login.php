@@ -16,25 +16,35 @@
 					print "<script>alert(\"Wrong username/password combination!\");window.location='../views/login.php';</script>";
 				
 				}elseif($user_id==1){
-					$sql2= "select username from user where id=$user_id ";
+					$sql2= "select * from user where id=$user_id ";
 					$query2 = $conn->query($sql2);
 					$row = mysqli_fetch_array($query2,MYSQLI_ASSOC);
 					$login_session = $row['username'];
+					$full_Name = $row["fullname"];
+					$email = $row["email"];
 
 					session_start();
 					$_SESSION['user_id']=$user_id;
 					$_SESSION["username"]=$login_session;
+					$_SESSION["fullname"]=$full_Name;
+					$_SESSION["email"]=$email;
+					
 					print "<script>alert(\"Welcome Admin!!!\");window.location='../views/admin.php';</script>";	
 				
 				}else{
-					$sql2= "select username from user where id=$user_id ";
+					$sql2= "select * from user where id=$user_id ";
 					$query2 = $conn->query($sql2);
 					$row = mysqli_fetch_array($query2,MYSQLI_ASSOC);
 					$login_session = $row['username'];
+					$full_Name = $row["fullname"];
+					$email = $row["email"];
 					
 					session_start();
 					$_SESSION['user_id']=$user_id;
 					$_SESSION["username"]=$login_session;
+					$_SESSION["fullname"]=$full_Name;
+					$_SESSION["email"]=$email;
+
 					print "<script>window.location='../views/home.php';</script>";				
 				}
 			}

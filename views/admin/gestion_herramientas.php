@@ -18,7 +18,8 @@
     }else{
       print "<script>alert(\"You need to be ADMIN to access this page!!\");window.location='../views/login.php';</script>";
     }
-    include('../views/includes/header.php'); 
+    
+    include('../includes/header.php'); 
   ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
@@ -67,7 +68,7 @@
     </main>
   </div>
   <!-- ################################################################################################ -->
-  <?php include('../views/includes/footer.php'); ?>
+  <?php include('../includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
 </html>

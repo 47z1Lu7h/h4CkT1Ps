@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -13,12 +12,8 @@
   <!-- ################################################################################################ -->
   <?php 
     session_start();
-    if (($_SESSION['username'])=="admin") {
-    }else{
-      print "<script>alert(\"You need to be ADMIN to access this page!!\");window.location='../views/login.php';</script>";
-    }
-    
-    include('../views/includes/header.php'); 
+    include('../includes/header.php');
+    include('/h4CkT1Ps/php/functions.php'); 
   ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
@@ -26,48 +21,61 @@
       <!-- ################################################################################################ -->
       <ul>
         <li><a href="/h4CkT1Ps/index.php"><strong> index  </strong></a></li>
-        <li><a href="/h4CkT1Ps/views/admin.php">admin</a></li>
-        <li><a href="/h4CkT1Ps/admin/gestion_usuarios.php">Gestion de usuarios</a></li>
+        <li><a href="/h4CkT1Ps/views/pages/cursos.php">Cursos</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
   </div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
   <div class="wrapper row3">
     <main class="hoc container clear">
       <!-- main body -->
+      <div class="content">
       <!-- ################################################################################################ -->
       <div class="sidebar one_quarter first">        
-        <!-- ################################################################################################ -->
-        <h6><em>Herramientas administrativas</em></h6>
-        <nav class="sdb_holder">      
-          <ul>
-            <li><a class="drop" href=""> <em>Gestion Administrativa</em> </a><br>
+      <!-- ################################################################################################ -->
+      <h6> Cursos Disponibles</h6>
+      <nav class="sdb_holder">      
+        <ul>
+          <li><a class="drop" href="/h4CkT1Ps/views/pages/basico.php">Nivel Básico</a>
             <ul>
-              <li><a href="/h4CkT1Ps/admin/gestion_usuarios.php">Gestion de usuarios</a></li>
-              <li><a href="/h4CkT1Ps/admin/gestion_cursos.php">Gestion de cursos</a></li>
-              <li><a href="/h4CkT1Ps/admin/gestion_herramientas.php">Gestionar herramientas</a></li>
+            <li><a href="/h4CkT1Ps/views/pages/basicHack.php">Introduccion al Hacking</a></li>
+              <li><a href="/h4CkT1Ps/views/pages/noDisp.php">Personalización Linux</a></li>
             </ul>
-          </ul>
-        </nav>
-        <!-- ################################################################################################ -->
+          </li>
+          <li><a href="/h4CkT1Ps/views/pages/medio.php">Nivel Medio</a>
+            <ul>
+              <li><a href="/h4CkT1Ps/views/pages/webAttacks.php">Pentesting Web</a></li>
+            </ul>
+          </li>
+          <li><a href="/h4CkT1Ps/views/pages/avanzado.php">Nivel Avanzado</a></li>
+            <ul>
+              <li><a href="/h4CkT1Ps/views/pages/AD.php">Active Directory</a></li>
+            </ul>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
       </div>      
       <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
       <div class="content three_quarter">
         <!-- ################################################################################################ -->
-        <h1><strong> Gestion usuarios </strong> </h1>
-        <img class="imgr borderedbox inspace-5" src="../assets/images/demo/imgr.gif" alt="agluwwagephawgeṕh">
-        <p> </p>
-        <p> gestiona<a href=""> Aquí</a> gracias :)</p>
-          
-        <!-- ################################################################################################ -->
+        <figure class="group">
+          <figcaption>
+            <h6 class="heading">Descubre Nuestros Cursos </h6>
+            <p><?php mostrarArray($cursos)?> </p><br>
+            <footer><p> Curso basicHack->     <a class="btn" href="../pages/basicHack.php">Read More &raquo;</a></p></footer>
+          </figcaption></br>
+        </figure>
       </div>
-    </main>
   </div>
-  <!-- ################################################################################################ -->
-  <?php include('../views/includes/footer.php'); ?>
+  </main>
+  </div>
+  </div>
+  <!-- ############################################################################################### -->
+  <?php include('../includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
 </html>

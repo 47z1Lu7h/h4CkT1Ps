@@ -46,11 +46,11 @@
           <ul>
             <li><a class="" href=""><strong>  Explora Nuestra w3b! </strong></a><br>
               <ul>
-              <li><a href="/h4CkT1Ps/pages/cursos.php">Cursos</a></li>
-              <li><a href="/h4CkT1Ps/pages/tools.php">T@@l5</a></li>
-              <li><a href="/h4CkT1Ps/pages/vulns.php">VuLN5</a></li>
-              <li><a href="/h4CkT1Ps/pages/pentest.php">P3nt3st1ng</a></li>
-              <li><a href="/h4CkT1Ps/pages/users.php">Us3rs</a></li>
+              <li><a href="/h4CkT1Ps/views/pages/cursos.php">Cursos</a></li>
+              <li><a href="/h4CkT1Ps/views/pages/tools.php">T@@l5</a></li>
+              <li><a href="/h4CkT1Ps/views/pages/vulns.php">VuLN5</a></li>
+              <li><a href="/h4CkT1Ps/views/pages/pentest.php">P3nt3st1ng</a></li>
+              <li><a href="/h4CkT1Ps/views/pages/users.php">Us3rs</a></li>
               </ul>
             </li>
           </ul>
@@ -65,8 +65,10 @@
         <img class="imgr borderedbox inspace-5" src="" alt="test">
         <p><strong> ¡Hey!! </strong></p>
         <p> This is your User Panel..<br><br><em>
-            ~  Your USER_ID is: <?php echo $_SESSION["user_id"]; ?><br>
+            ~ Your USER_ID is: <?php echo $_SESSION["user_id"]; ?>
             ~ And Your Login Name: <?php echo $_SESSION["username"]; ?></p>
+            ~ And Your full Name: <?php echo $_SESSION["fullname"]; ?></p>
+            ~ And Your email: <?php echo $_SESSION["email"]; ?></p><br>
         <!-- ################################################################################################ -->
       </div></em>
 </main>

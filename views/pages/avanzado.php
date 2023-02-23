@@ -3,7 +3,7 @@
 <html>
 
 <head>
-<title>h4Ck~T1p5</title>
+  <title>h4Ck~T1p5</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="/h4CkT1Ps/assets/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -12,15 +12,15 @@
 <body id="top">
   <!-- ################################################################################################ -->
   <?php session_start();?>
-  <?php include('../views/includes/header.php'); ?>
-  <!-- ################################################################################################ -->
+  <?php include('../includes/header.php'); ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
     <div id="breadcrumb" class="hoc clear">
       <!-- ################################################################################################ -->
       <ul>
         <li><a href="/h4CkT1Ps/index.php"><strong> index  </strong></a></li>
-        <li><a href="/h4CkT1Ps/pages/pentest.php">Pentesting</a></li>
+        <li><a href="/h4CkT1Ps/views/pages/cursos.php">Cursos</a></li>
+        <li><a href="/h4CkT1Ps/views/pages/avanzado.php">Avanzado</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -32,32 +32,48 @@
     <main class="hoc container clear">
       <!-- main body -->
       <!-- ################################################################################################ -->
-      <div class="content">
+      <div class="sidebar one_quarter first">
+        
         <!-- ################################################################################################ -->
-        <h1>Pentesting</h1>
-        <img class="imgr borderedbox inspace-5" src="../assets/images/demo/imgr.gif" alt="">
-        <p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis
-          elit sagittis felisi eger id justo maurisus convallicitur.</p>
-        <p>Dapiensociis <a href="#">temper donec auctortortis cumsan</a> et curabitur condis lorem loborttis leo.
-          Ipsumcommodo libero nunc at in velis tincidunt pellentum tincidunt vel lorem.</p>
-        <img class="imgl borderedbox inspace-5" src="../assets/images/demo/imgl.gif" alt="">
-        <p>This is a W3C compliant free website template from <a href="http://www.os-templates.com/"
-            title="Free Website Templates">OS Templates</a>. For full terms of use of this template please read our <a
-            href="http://www.os-templates.com/template-terms">website template licence</a>.</p>
-        <p>You can use and modify the template for both personal and commercial use. You must keep all copyright
-          information and credit links in the template and associated files. For more website templates visit our <a
-            href="http://www.os-templates.com/">free website templates</a> section.</p>
-        <p>Portortornec condimenterdum eget consectetuer condis consequam pretium pellus sed mauris enim. Puruselit
-          mauris nulla hendimentesque elit semper nam a sapien urna sempus.</p>
+        <h6> Cursos Disponibles</h6>
+        <nav class="sdb_holder">      
+          <ul>
+            <li><a class="drop" href="/h4CkT1Ps/views/pages/basico.php">Nivel Básico</a>
+              <ul>
+              <li><a href="/h4CkT1Ps/views/pages/basicHack.php">Introduccion al Hacking</a></li>
+                <li><a href="/h4CkT1Ps/views/pages/noDisp.php">Personalización Linux</a></li>
+              </ul>
+            </li>
+            <li><a href="/h4CkT1Ps/views/pages/medio.php">Nivel Medio</a>
+              <ul>
+                <li><a href="/h4CkT1Ps/views/pages/webAttacks.php">Pentesting Web</a></li>
+              </ul>
+            </li>
+            <li><a href="/h4CkT1Ps/views/pages/avanzado.php">Nivel Avanzado</a></li>
+              <ul>
+                <li><a href="/h4CkT1Ps/views/pages/AD.php">Active Directory</a></li>
+              </ul>
+          </ul>
+        </nav>
         <!-- ################################################################################################ -->
       </div>
       <!-- ################################################################################################ -->
-      <!-- / main body -->
-      <div class="clear"></div>
+      <!-- ################################################################################################ -->
+      <div class="content three_quarter">
+        <!-- ################################################################################################ -->
+        <h1><strong> Nivel Avanzado </strong></h1>
+        <div> <p><h2>Curso de Active Directory</h2></p>
+              <img class="imgr borderedbox inspace-5" src="" alt="test">
+              <p> </p>
+              <p>alalala<a href="/h4CkT1Ps/views/pages/AD.php"> Aquí</a>, muchas gracias :)</p>
+        </div>   
+        <!-- ################################################################################################ -->
+      </div>
     </main>
   </div>
-  <!-- ################################################################################################ -->
-  <?php include('../views/includes/footer.php'); ?>
+  </div>
+  <!-- ############################################################################################### -->
+  <?php include('../includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
 </html>

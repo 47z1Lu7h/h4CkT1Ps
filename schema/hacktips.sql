@@ -86,16 +86,7 @@ INSERT INTO cursos (id, nombre, descripcion, precio) VALUES
 (7, "Advanced PE", "descrp", "10 €");
 --
 --
--- --------------------------------------------------------
--- COMMENTS secction 
--- --------------------------------------------------------
 
---
--- Table structure for table ``
---
-    -- ¡¡¡coming soon!!!
---
---
 -- --------------------------------------------------------
 -- cart secction
 -- --------------------------------------------------------
@@ -120,3 +111,14 @@ INSERT INTO `products` (`id`, `product_code`, `product_name`, `product_desc`, `p
 (2, 'PD1002', 'Television DXT', 'Ia menggunakan kamus yt Latin, untuk menghasilkan Lorem Ipsum yang munasabah.', 'lcd-tv.jpg', 500.85),
 (3, 'PD1003', 'External Hard Disk', 'Ada banyak versi dari  lawak jenaka diselitkan, atau ayat ayat yang', 'external-hard-disk.jpg', 100.00),
 (4, 'PD1004', 'Wrist Watch GE2', 'Memalukan akan terselit didalat sekali di Internet.', 'wrist-watch.jpg', 400.30);
+
+-- --------------------------------------------------------
+-- COMMENTS secction 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table ``
+--
+    -- ¡¡¡coming soon!!!
+--
+--

@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="/h4CkT1Ps/assets/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
-
+<?php include('/h4CkT1Ps/views/includes/header.php');?>
 <body id="top">
   <!-- ################################################################################################ -->
   <?php 
@@ -18,7 +18,7 @@
       print "<script>alert(\"You need to be ADMIN to access this page!!\");window.location='../views/login.php';</script>";
     }
     
-    include('../views/includes/header.php'); 
+    include('../includes/header.php'); 
   ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
@@ -26,7 +26,7 @@
       <!-- ################################################################################################ -->
       <ul>
         <li><a href="/h4CkT1Ps/index.php"><strong> index  </strong></a></li>
-        <li><a href="/h4CkT1Ps/pages/cursos.php">Cursos</a></li>
+        <li><a href="/h4CkT1Ps/views/pages/cursos.php">Cursos</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -67,7 +67,7 @@
 </main>
   </div>
   <!-- ################################################################################################ -->
-  <?php include('../views/includes/footer.php'); ?>
+  <?php include('../includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
 </html>

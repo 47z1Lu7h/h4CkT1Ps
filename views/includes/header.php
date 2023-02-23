@@ -27,11 +27,11 @@
         <ul>
           <li><a href="/h4CkT1Ps/index.php"><i class="fa fa-lg fa-home"></i></a></li>
           <?php if(!isset($_SESSION["username"])):?>
-          <li><a href="/h4CkT1Ps/views/register.php">REGIST3R</a></li>
+          <li><a href="../views/register.php">REGIST3R</a></li>
           <li><a href="/h4CkT1Ps/views/login.php">L@GIN</a></li>
           <?php else:?>
           <li><a> Welcome <?php echo($_SESSION["username"])?>! </a></li>
-          <li><a href="/h4CkT1Ps/cart/view_cart.php"><i class="fa fa-lg fa-shopping-bag"></i></a></li>
+          <li><a href="/h4CkT1Ps/views/cart/view_cart.php"><i class="fa fa-lg fa-shopping-bag"></i></a></li>
           <li><a href="/h4CkT1Ps/php/logout.php">SALIR</a></li>
           <?php endif;?>
         </ul>
@@ -60,34 +60,34 @@
         <li class="active"><a href="/h4CkT1Ps/index.php"><strong>index</strong></a></li>
         <li><a class="drop" href="#">Páginas</a>
           <ul>
-            <li><a href="/h4CkT1Ps/pages/pentest.php">pentest</a></li>
-            <li><a href="/h4CkT1Ps/pages/tools.php">tools</a></li>
-            <li><a href="/h4CkT1Ps/pages/vulns.php">vulns</a></li>
+            <li><a href="/h4CkT1Ps/views/pages/pentest.php">pentest</a></li>
+            <li><a href="/h4CkT1Ps/views/pages/tools.php">tools</a></li>
+            <li><a href="/h4CkT1Ps/views/pages/vulns.php">vulns</a></li>
           </ul>
         </li>
-        <li><a class="drop" href="/h4CkT1Ps/pages/cursos.php">Cursos</a>
+        <li><a class="drop" href="/h4CkT1Ps/views/pages/cursos.php">Cursos</a>
           <ul>
-            <li><a class="drop" href="/h4CkT1Ps/pages/basico.php">Principiante</a>
+            <li><a class="drop" href="/h4CkT1Ps/views/pages/basico.php">Principiante</a>
               <ul>
-                <li><a href="/h4CkT1Ps/pages/basicHack.php">Introducción al Hacking</a></li>
-                <li><a href="/h4CkT1Ps/pages/noDisp.php">Personalización Linux</a></li>
+                <li><a href="/h4CkT1Ps/views/pages/basicHack.php">Introducción al Hacking</a></li>
+                <li><a href="/h4CkT1Ps/views/pages/noDisp.php">Personalización Linux</a></li>
               </ul>
             </li>
-            <li><a class="drop" href="/h4CkT1Ps/pages/medio.php">Medio</a>
+            <li><a class="drop" href="/h4CkT1Ps/views/pages/medio.php">Medio</a>
               <ul>
-                <li><a href="/h4CkT1Ps/pages/webAttacks.php">Pentesting Web</a></li>
+                <li><a href="/h4CkT1Ps/views/pages/webAttacks.php">Pentesting Web</a></li>
               </ul>
             </li>
-            <li><a class="drop" href="/h4CkT1Ps/pages/avanzado.php">Avanzado</a>
+            <li><a class="drop" href="/h4CkT1Ps/views/pages/avanzado.php">Avanzado</a>
               <ul>
-                <li><a href="/h4CkT1Ps/pages/AD.php">Active Directory</a></li>
+                <li><a href="/h4CkT1Ps/views/pages/AD.php">Active Directory</a></li>
               </ul>
             </li>
           </ul>
         </li>
         <li><a href="/h4CkT1Ps/views/admin.php">Admin</a></li>
         <li><a href="/h4CkT1Ps/views/home.php">Home</a></li>
-        <li><a class="fa fa-shopping-cart " href="/h4CkT1Ps/cart"> ~ <strong>Merchandising </strong> </a></li>
+        <li><a class="fa fa-shopping-cart " href="/h4CkT1Ps/views/cart"> ~ <strong>Merchandising </strong> </a></li>
       </ul>
       <!-- ################################################################################################ -->
     </nav>

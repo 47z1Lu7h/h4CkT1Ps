@@ -12,10 +12,13 @@
 <body id="top">
   <!-- ################################################################################################ -->
   <?php 
-      session_start();
-      include('../views/includes/header.php');
-      include('../php/functions.php'); 
-      include('../php/arrays.php'); 
+    session_start();
+    if (($_SESSION['username'])=="admin") {
+    }else{
+      print "<script>alert(\"You need to be ADMIN to access this page!!\");window.location='../views/login.php';</script>";
+    }
+    
+    include('../includes/header.php'); 
   ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
@@ -23,7 +26,8 @@
       <!-- ################################################################################################ -->
       <ul>
         <li><a href="/h4CkT1Ps/index.php"><strong> index  </strong></a></li>
-        <li><a href="/h4CkT1Ps/views/usuarios.php">Users</a></li>
+        <li><a href="/h4CkT1Ps/views/admin.php">admin</a></li>
+        <li><a href="/h4CkT1Ps/admin/gestion_usuarios.php">Gestion de usuarios</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -34,30 +38,36 @@
     <main class="hoc container clear">
       <!-- main body -->
       <!-- ################################################################################################ -->
-      <div class="content">
+      <div class="sidebar one_quarter first">        
         <!-- ################################################################################################ -->
-        <h1>Users</h1>
-        <img class="imgr borderedbox inspace-5" src="" alt="">
-        <div class="content three_quarter">
+        <h6><em>Herramientas administrativas</em></h6>
+        <nav class="sdb_holder">      
+          <ul>
+            <li><a class="drop" href=""> <em>Gestion Administrativa</em> </a><br>
+            <ul>
+              <li><a href="/h4CkT1Ps/admin/gestion_usuarios.php">Gestion de usuarios</a></li>
+              <li><a href="/h4CkT1Ps/admin/gestion_cursos.php">Gestion de cursos</a></li>
+              <li><a href="/h4CkT1Ps/admin/gestion_herramientas.php">Gestionar herramientas</a></li>
+            </ul>
+          </ul>
+        </nav>
         <!-- ################################################################################################ -->
-        <figure class="group">
-          <figcaption>
-              <p> Users arrays -->> </p>
-              <footer> <a class="btn" href=""><?php mostrarArray($users)?></a></p></footer>
-          </figcaption></br>
-        </figure>
-      </div>
-        <img class="imgl borderedbox inspace-5" src="" alt="">
-      </div>
+      </div>      
       <!-- ################################################################################################ -->
-      <!-- / main body -->
-      <div class="clear"></div>
+      <!-- ################################################################################################ -->
+      <div class="content three_quarter">
+        <!-- ################################################################################################ -->
+        <h1><strong> Gestion usuarios </strong> </h1>
+        <img class="imgr borderedbox inspace-5" src="../assets/images/demo/imgr.gif" alt="agluwwagephawgeṕh">
+        <p> </p>
+        <p> gestiona<a href=""> Aquí</a> gracias :)</p>
+          
+        <!-- ################################################################################################ -->
+      </div>
     </main>
   </div>
-
   <!-- ################################################################################################ -->
-  <?php include('../views/includes/footer.php'); ?>
+  <?php include('../includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
-
 </html>

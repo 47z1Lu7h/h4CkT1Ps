@@ -12,13 +12,8 @@
 <body id="top">
   <!-- ################################################################################################ -->
   <?php 
-    session_start();
-    if (($_SESSION['username'])=="admin") {
-    }else{
-      print "<script>alert(\"You need to be ADMIN to access this page!!\");window.location='login.php';</script>";
-    }
-    
-    include('includes/header.php'); 
+      session_start();
+      include('../includes/header.php');
   ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
@@ -26,49 +21,46 @@
       <!-- ################################################################################################ -->
       <ul>
         <li><a href="/h4CkT1Ps/index.php"><strong> index  </strong></a></li>
-        <li><a href="/h4CkT1Ps/views/admin.php">Admin</a></li>
+        <li><a href="/h4CkT1Ps/views/usuarios.php">Users</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
   </div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
   <div class="wrapper row3">
     <main class="hoc container clear">
       <!-- main body -->
       <!-- ################################################################################################ -->
-      <div class="sidebar one_quarter first">
+      <div class="content">
         <!-- ################################################################################################ -->
-        <h6><em>Herramientas administrativas</em></h6>
-        <nav class="sdb_holder">      
-          <ul>
-            <li><a class="drop" href=""> <em>Gestion Administrativa</em> </a><br>
-            <ul>
-              <li><a href="admin/gestion_usuarios.php">Gestion de usuarios</a></li>
-              <li><a href="admin/gestion_cursos.php">Gestion de cursos</a></li>
-              <li><a href="admin/gestion_herramientas.php">Gestionar herramientas</a></li>
-            </ul>
-          </ul>
-        </nav>
+        <h1>Users</h1>
+        <img class="imgr borderedbox inspace-5" src="" alt="">
+        <div class="content three_quarter">
         <!-- ################################################################################################ -->
+        <figure class="group">
+          <figcaption>
+              <p> Users arrays -->> </p>
+              <footer> <a class="btn" href=""><?php mostrarArray($users)?></a></p></footer>
+          </figcaption></br>
+        </figure>
+      </div>
+        <img class="imgl borderedbox inspace-5" src="" alt="">
       </div>
       <!-- ################################################################################################ -->
-      <!-- ################################################################################################ -->
-      <div class="content three_quarter">
-        <!-- ################################################################################################ -->
-        <h1><strong> Admin Panel </strong>  </h1>
-        <p>Panel administración admin</p><br>
-        <div><img src="/h4CkT1Ps/assets/images/demo/gallery/adm1n.png" alt=""></div>
-        <p> </p>
-
-        <!-- ################################################################################################ -->
-      </div>
-</main>
+      <!-- / main body -->
+      <div class="clear"></div>
+    </main>
   </div>
-  <!-- ################################################################################################ -->
-  <?php include('../views/includes/footer.php'); ?>
+  </div>
+      <!-- ################################################################################################ -->
+      <?php 
+          include('php/functions.php'); 
+          
+      ?>
+      <!-- ################################################################################################ -->
+  <!-- ############################################################################################### -->
+  <?php include('../includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
-
 </html>

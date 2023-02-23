@@ -18,7 +18,7 @@
       print "<script>alert(\"You need to be ADMIN to access this page!!\");window.location='login.php';</script>";
     }
     
-    include('../views/includes/header.php'); 
+    include('../includes/header.php'); 
   ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
@@ -27,7 +27,7 @@
       <ul>
         <li><a href="/h4CkT1Ps/index.php"><strong> index  </strong></a></li>
         <li><a href="/h4CkT1Ps/views/admin.php">Admin</a></li>
-        <li><a href="/h4CkT1Ps/pages/gestion_cursos.php">Gestion cursos</a></li>
+        <li><a href="/h4CkT1Ps/views/pages/gestion_cursos.php">Gestion cursos</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -68,7 +68,7 @@
     </main>
   </div>
   <!-- ################################################################################################ -->
-  <?php include('../views/includes/footer.php'); ?>
+  <?php include('../includes/footer.php'); ?>
   <!-- ################################################################################################ -->
 </body>
 </html>
