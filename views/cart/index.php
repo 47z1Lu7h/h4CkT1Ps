@@ -82,6 +82,7 @@ $products_item .= <<<EOT
 	Price {$currency}{$obj->price} 
 	
 	<fieldset>
+
 	
 	<label>
 		<span>Quantity</span>

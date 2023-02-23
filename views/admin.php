@@ -44,23 +44,28 @@
         <nav class="sdb_holder">      
           <ul>
             <li><a class="drop" href=""> <em>Gestion Administrativa</em> </a><br>
-            <ul>
+            <ul><em>
               <li><a href="admin/gestion_usuarios.php">Gestion de usuarios</a></li>
               <li><a href="admin/gestion_cursos.php">Gestion de cursos</a></li>
               <li><a href="admin/gestion_herramientas.php">Gestionar herramientas</a></li>
-            </ul>
+              <li><a href="admin/gestion_products.php">Gestion de productos</a></li>
+            </ul></em>
           </ul>
         </nav>
         <!-- ################################################################################################ -->
       </div>
       <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
-      <div class="content three_quarter">
+      <div class="content two_quarter">
         <!-- ################################################################################################ -->
-        <h1><strong> Admin Panel </strong>  </h1>
-        <p>Panel administración admin</p><br>
-        <div><img src="/h4CkT1Ps/assets/images/demo/gallery/adm1n.png" alt=""></div>
-        <p> </p>
+        <div class="posts">
+        <figure class="group">
+          <figcaption>
+            <h6 class="heading"><strong> Admin Panel </strong>  </h6>
+            <p><em>Panel administración admin</em></p><br>
+            <footer><div><img src="../assets/images/demo/gallery/adm1n.png" alt=""></div></footer>
+          </figcaption>
+        </figure>
 
         <!-- ################################################################################################ -->
       </div>

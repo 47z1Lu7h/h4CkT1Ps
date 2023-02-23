@@ -31,7 +31,7 @@ use hacktips;
 --
 -- Estructura de tabla para la tabla 'users'
 --
-CREATE TABLE IF NOT EXISTS user(
+CREATE TABLE IF NOT EXISTS user (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	fullname VARCHAR(255) NOT NULL,
 	username VARCHAR(255) NOT NULL unique,
@@ -47,7 +47,7 @@ INSERT INTO user (id, fullname, username, email, password, created_at) VALUES
 --
 -- Estructura de tabla para la tabla 'tools'
 --
-CREATE TABLE tools(
+CREATE TABLE IF NOT EXISTS tools(
     id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL
 );
@@ -67,8 +67,8 @@ INSERT INTO tools (id, nombre) VALUES
 --
 -- Estructura de tabla para la tabla 'cursos'
 --
-CREATE TABLE IF NOT EXISTS cursos(
-    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS cursos (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
     descripcion VARCHAR(1024) NOT NULL,
     precio DECIMAL(9,2)
@@ -91,26 +91,24 @@ INSERT INTO cursos (id, nombre, descripcion, precio) VALUES
 -- cart secction
 -- --------------------------------------------------------
 
-CREATE TABLE IF NOT EXISTS `products` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `product_code` varchar(60) NOT NULL,
-  `product_name` varchar(60) NOT NULL,
-  `product_desc` tinytext NOT NULL,
-  `product_img_name` varchar(60) NOT NULL,
-  `price` decimal(10,2) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `product_code` (`product_code`)
-) AUTO_INCREMENT=1 ;
-
+CREATE TABLE IF NOT EXISTS products (
+  id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  product_code varchar(60) NOT NULL UNIQUE KEY,
+  product_name varchar(60) NOT NULL,
+  product_desc tinytext NOT NULL,
+  product_img_name varchar(60) NOT NULL,
+  price decimal(10,2) NOT NULL
+);
 --
--- Dumping data for table `products`
+-- Volcado datos for table 'products'
 --
-
-INSERT INTO `products` (`id`, `product_code`, `product_name`, `product_desc`, `product_img_name`, `price`) VALUES
+INSERT INTO products (id, product_code, product_name, product_desc, product_img_name, price) VALUES
 (1, 'PD1001', 'yepaaa', 'Di sertakan secara rambanmebahwa tiada apa yang', 'android-phone.jpg', 200.50),
 (2, 'PD1002', 'Television DXT', 'Ia menggunakan kamus yt Latin, untuk menghasilkan Lorem Ipsum yang munasabah.', 'lcd-tv.jpg', 500.85),
 (3, 'PD1003', 'External Hard Disk', 'Ada banyak versi dari  lawak jenaka diselitkan, atau ayat ayat yang', 'external-hard-disk.jpg', 100.00),
 (4, 'PD1004', 'Wrist Watch GE2', 'Memalukan akan terselit didalat sekali di Internet.', 'wrist-watch.jpg', 400.30);
+--
+--
 
 -- --------------------------------------------------------
 -- COMMENTS secction 

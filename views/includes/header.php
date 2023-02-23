@@ -87,7 +87,7 @@
         </li>
         <li><a href="/h4CkT1Ps/views/admin.php">Admin</a></li>
         <li><a href="/h4CkT1Ps/views/home.php">Home</a></li>
-        <li><a class="fa fa-shopping-cart " href="/h4CkT1Ps/views/cart"> ~ <strong>Merchandising </strong> </a></li>
+        <li><a class="fa fa-shopping-cart" class="" href="/h4CkT1Ps/views/cart"> ~ <strong>  Merch! </strong> </a></li>
       </ul>
       <!-- ################################################################################################ -->
     </nav>

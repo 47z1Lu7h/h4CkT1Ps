@@ -44,11 +44,12 @@
         <nav class="sdb_holder">      
           <ul>
             <li><a class="drop" href=""> <em>Gestion Administrativa</em> </a><br>
-            <ul>
-              <li><a href="/h4CkT1Ps/admin/gestion_usuarios.php">Gestion de usuarios</a></li>
-              <li><a href="/h4CkT1Ps/admin/gestion_cursos.php">Gestion de cursos</a></li>
-              <li><a href="/h4CkT1Ps/admin/gestion_herramientas.php">Gestionar herramientas</a></li>
-            </ul>
+            <ul><em>
+              <li><a href="gestion_usuarios.php">Gestion de usuarios</a></li>
+              <li><a href="gestion_cursos.php">Gestion de cursos</a></li>
+              <li><a href="gestion_herramientas.php">Gestionar herramientas</a></li>
+              <li><a href="gestion_products.php">Gestion de productos</a></li>
+            </ul></em>
           </ul>
         </nav>
         <!-- ################################################################################################ -->

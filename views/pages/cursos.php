@@ -13,7 +13,7 @@
   <?php 
     session_start();
     include('../includes/header.php');
-    include('/h4CkT1Ps/php/functions.php'); 
+    include('../../php/functions.php'); 
   ?>
   <!-- ################################################################################################ -->
   <div class="wrapper row2 bgded overlay" style="background-image:url('../assets/images/demo/backgrounds/02.png');">
@@ -66,7 +66,7 @@
           <figcaption>
             <h6 class="heading">Descubre Nuestros Cursos </h6>
             <p><?php mostrarArray($cursos)?> </p><br>
-            <footer><p> Curso basicHack->     <a class="btn" href="../pages/basicHack.php">Read More &raquo;</a></p></footer>
+            <footer><p> Curso basicHack  ->     <a class="btn" href="../pages/basicHack.php">Read More &raquo;</a></p></footer>
           </figcaption></br>
         </figure>
       </div>
