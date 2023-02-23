@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="/h4CkT1Ps/assets/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<?php include('/h4CkT1Ps/views/includes/header.php');?>
-<body id="top">
+
+  <body id="top">
   <!-- ################################################################################################ -->
   <?php 
     session_start();
