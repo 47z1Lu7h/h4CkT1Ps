@@ -92,21 +92,24 @@ INSERT INTO cursos (id, nombre, descripcion, precio) VALUES
 -- --------------------------------------------------------
 
 CREATE TABLE IF NOT EXISTS products (
-  id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  product_code varchar(60) NOT NULL UNIQUE KEY,
-  product_name varchar(60) NOT NULL,
-  product_desc tinytext NOT NULL,
-  product_img_name varchar(60) NOT NULL,
-  price decimal(10,2) NOT NULL
+    id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    product_code varchar(60) NOT NULL UNIQUE KEY,
+    product_name varchar(60) NOT NULL,
+    product_desc tinytext NOT NULL,
+    product_img_name varchar(60) NOT NULL,
+    price decimal(10,2) NOT NULL
 );
 --
 -- Volcado datos for table 'products'
 --
 INSERT INTO products (id, product_code, product_name, product_desc, product_img_name, price) VALUES
-(1, 'PD1001', 'yepaaa', 'Di sertakan secara rambanmebahwa tiada apa yang', 'android-phone.jpg', 200.50),
-(2, 'PD1002', 'Television DXT', 'Ia menggunakan kamus yt Latin, untuk menghasilkan Lorem Ipsum yang munasabah.', 'lcd-tv.jpg', 500.85),
-(3, 'PD1003', 'External Hard Disk', 'Ada banyak versi dari  lawak jenaka diselitkan, atau ayat ayat yang', 'external-hard-disk.jpg', 100.00),
-(4, 'PD1004', 'Wrist Watch GE2', 'Memalukan akan terselit didalat sekali di Internet.', 'wrist-watch.jpg', 400.30);
+(1, 'PD1001', 'MoBilePhone', 'Un movil muy chulo.', 'android-phone.jpg', 200.50),
+(2, 'PD1002', 'TV Lcd Plasma Led', 'Tv Magica con conexion quantica.', 'lcd-tv.jpg', 500.85),
+(3, 'PD1003', 'External Hard Disk', 'Disco duro de alta capacidad.', 'external-hard-disk.jpg', 100.00),
+(4, 'PD1004', 'Wrist Watch ECC GT', 'Relog muy wapis con muchas cosas.', 'wrist-watch.jpg', 400.30),
+(5, 'PD1005', 'basic Hack', 'Curso de hacking basico.', 'basic.jpg', 400.30),
+(6, 'PD1006', 'PentestWeb', 'Curso pentesting Web.', 'pentesWeb.jpg', 400.30),
+(7, 'PD1007', 'BspWm Eviroment', 'Linux Evironment superHack.', 'capi.png', 400.30);
 --
 --
 
